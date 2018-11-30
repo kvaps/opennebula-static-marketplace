@@ -23,19 +23,21 @@ More info:
 
 ## Author
 
-* [kvaps](http://github.com/kvaps)
+* Author: [kvaps](http://github.com/kvaps)
+
+* Images metadata imported automatically from official [OpenNebula Marketplace](http://marketplace.opennebula.systems/) and managed by [OpenNebula Systems](http://opennebula.systems/).
 
 ## Compatibility
 
 This add-on is compatible with OpenNebula 4.14.2+
 
-## Installation
+## Driver Installation
 
 Driver installation:
 
 ```
-git clone https://github.com/kvaps/addon-static-appmarket
-cp -r addon-static-appmarket/driver/static /var/lib/one/remotes/market/
+git clone https://github.com/kvaps/addon-appmarket-static
+cp -r addon-appmarket-static/driver/static /var/lib/one/remotes/market/
 ```
 
 Update `/etc/one/oned.conf`:
@@ -61,7 +63,7 @@ MARKET_MAD_CONF = [
 ]
 ```
 
-## Configuration
+## Driver configuration
 
 The following attributes can be used for configure marketplace
 
@@ -79,7 +81,7 @@ Create new marketplace:
 cat > appmarket.conf <<EOT
 NAME = "Static Marketplace"
 MARKET_MAD = "static"
-ENDPOINT = "https://raw.githubusercontent.com/kvaps/addon-static-appmarket/master/metadata"
+ENDPOINT = "https://raw.githubusercontent.com/kvaps/addon-appmarket-static/master/metadata"
 EOT
 
 onedatastore create market.conf
