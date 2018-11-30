@@ -2,7 +2,7 @@
 if [ -n "$1" ]; then
   DIR="$1"
 else
-  DIR="$(dirname "$(readlink -f "$0")")/appliances"
+  DIR="$(dirname "$(readlink -f "$0")")"
 fi
 
 find "$DIR" -name app.conf -exec dirname {} \; | while read APP_DIR; do
