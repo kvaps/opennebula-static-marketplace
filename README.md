@@ -35,7 +35,7 @@ Driver installation:
 
 ```
 git clone https://github.com/kvaps/addon-static-appmarket
-cp -r addon-static-appmarket/market_mad/static /var/lib/one/remotes/market/
+cp -r addon-static-appmarket/driver/static /var/lib/one/remotes/market/
 ```
 
 Update `/etc/one/oned.conf`:
