@@ -89,3 +89,30 @@ onedatastore create market.conf
 
 ## Usage 
 
+For creating your own marketplace:
+
+1. Clone this repo
+
+2. Remove default appliances
+
+   ```
+   rm -f /appliances/*
+   ```
+
+3. Write your own appliance:
+
+   * `app.conf` - main appliance manifest
+   * `apptemplate.conf` - variables applicable to images
+   * `vmtemplate.conf` - virtual machine template
+
+4. Save your appliance into `appliances/<myapp>`
+
+5. Generate new `metadata` file:
+
+   ```
+    ./generate.sh appliances/ > metadata
+   ```
+
+6. Upload `metadata` file to some HTTP or S3-server and provide access to it
+
+7. Specify url in `ENDPOINT` variable for the static driver in OpenNebula
