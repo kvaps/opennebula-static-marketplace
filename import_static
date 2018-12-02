@@ -1,12 +1,7 @@
 #!/bin/sh
 set -e
-DIR=${DIR:-appliances}
-
-if [ -n "$1" ]; then
-  METADATA_FILE="$1"
-else
-  METADATA_FILE="./metadata"
-fi
+METADATA_FILE="${1:-$(dirname "$(readlink -f "$0")")/metadata}"
+DIR=${2:-appliances}
 
 case "$1" in
   http*)

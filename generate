@@ -1,9 +1,5 @@
 #!/bin/sh
-if [ -n "$1" ]; then
-  DIR="$1"
-else
-  DIR="$(dirname "$(readlink -f "$0")")"
-fi
+DIR="${1:-$(dirname "$(readlink -f "$0")")}"
 
 find "$DIR" -name app.conf -exec dirname {} \; | while read APP_DIR; do
   APP="$APP_DIR/app.conf"

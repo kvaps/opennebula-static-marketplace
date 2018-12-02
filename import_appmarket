@@ -176,7 +176,7 @@ end
 ################################################################################
 
 url = ARGV[0] rescue nil
-dir = ENV['DIR']
+dir = ARGV[1] rescue nil
 
 one_market = OneMarket.new(url, dir)
 one_market.get_appliances
