@@ -175,8 +175,8 @@ end
 # Main Program. Outpust the list of marketplace appliances
 ################################################################################
 
-url = ENV['MARKETPLACE']
-dir = ARGV[0] rescue nil
+url = ARGV[0] rescue nil
+dir = ENV['DIR']
 
 one_market = OneMarket.new(url, dir)
 one_market.get_appliances
