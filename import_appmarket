@@ -177,11 +177,6 @@ end
 
 url = ENV['MARKETPLACE']
 dir = ARGV[0] rescue nil
-#if ARGV[0].to_s.empty?
-#    dir = "appliances"
-#else
-#    dir = ARGV[0] rescue nil
-#end
 
 one_market = OneMarket.new(url, dir)
 one_market.get_appliances
