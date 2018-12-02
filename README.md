@@ -69,8 +69,8 @@ The following attributes can be used for configure marketplace
 
 |    Attribute        |                     Description                |
 | ---------------     | ---------------------------------------------- |
-| `NAME`              | The name of the datastore                      |
-| `ENDPOINT`          | URL to your metadata                           |
+| `NAME`              | The name of the marketplace                    |
+| `ENDPOINT`          | URL to your metadata file                      |
 | `MARKET_MAD`        | Must be `static`                               |
 | `BRIDGE_LIST`       | List of hosts used for downloading metadata    |
 
@@ -96,7 +96,7 @@ For creating your own marketplace:
 2. Remove default appliances
 
    ```
-   rm -f /appliances/*
+   rm -rf ./appliances/*
    ```
 
 3. Write your own appliance:
