@@ -21,14 +21,7 @@ echo "$METADATA" | while read line; do
   PUBLISHER=$(echo "$APP" | sed -n 's/^PUBLISHER="\(.*\)"$/\1/p' | tr ' ' '_')
   APPTEMPLATE64=$(echo "$APP" | sed -n 's/^APPTEMPLATE64="\(.*\)"$/\1/p' | base64 -d)
   VMTEMPLATE64=$(echo "$APP" | sed -n 's/^VMTEMPLATE64="\(.*\)"$/\1/p' | base64 -d)
-  if [ "$PUBLISHER" = "OpenNebula_Systems" ]; then
-
-    HYPERVISOR=$(echo "$APP" | sed -n 's/^NAME=".*- \(.*\)"$/\1/p' | tr '[:upper:]' '[:lower:]' )
-    [ -n "$HYPERVISOR" ] || HYPERVISOR=kvm
-    APPLIANCE_DIR="$DIR/$PUBLISHER/$HYPERVISOR/$NAME"
-  else
-    APPLIANCE_DIR="$DIR/$PUBLISHER/$NAME"
-  fi
+  APPLIANCE_DIR="$DIR/$PUBLISHER/$NAME"
   echo "$APPLIANCE_DIR"
   mkdir -p "$APPLIANCE_DIR"
   if [ -n "$APPTEMPLATE64" ]; then

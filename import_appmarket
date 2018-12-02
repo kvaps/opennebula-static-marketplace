@@ -96,12 +96,7 @@ class OneMarket
             print_var(tmpl, "TAGS",        app["tags"].join(', '))
             print_var(tmpl, "REGTIME",     app["creation_time"])
 
-            if app['publisher'] == "OpenNebula Systems"
-              Dir.mkdir() unless File.exists?(app_dir)
-              app_dir = "#{@dir}/#{app['publisher'].gsub(/\s+/, '_')}/#{app['hypervisor'].downcase}/#{app['name'].gsub(/\s+/, '_')}"
-            else
-              app_dir = "#{@dir}/#{app['publisher'].gsub(/\s+/, '_')}/#{app['name'].gsub(/\s+/, '_')}"
-            end
+            app_dir = "#{@dir}/#{app['publisher'].gsub(/\s+/, '_')}/#{app['name'].gsub(/\s+/, '_')}"
             puts app_dir
             FileUtils.mkdir_p app_dir
 
