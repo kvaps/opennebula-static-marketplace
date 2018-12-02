@@ -110,7 +110,7 @@ For creating your own marketplace:
 5. Generate new `metadata` file:
 
    ```
-    ./generate.sh appliances/ > metadata
+    ./generate appliances/ > metadata
    ```
 
 6. Upload `metadata` file to some HTTP or S3-server and provide access to it
