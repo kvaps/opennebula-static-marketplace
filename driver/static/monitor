@@ -60,7 +60,7 @@ if [ -z "$ENDPOINT" ]; then
     exit 1
 fi
 
-MONITOR_SCRIPT="curl -sS \"$ENDPOINT\""
+MONITOR_SCRIPT="curl -sSL \"$ENDPOINT\""
 
 if [ -n "$BRIDGE_LIST" ]; then
     HOST=`get_destination_host`
