@@ -21,6 +21,7 @@ require 'uri'
 require 'json'
 require 'base64'
 require 'rexml/document'
+require 'fileutils'
 
 class OneMarket
     ONE_MARKET_URL = 'http://marketplace.opennebula.systems/'
@@ -76,8 +77,6 @@ class OneMarket
         apptemplate_conf = ""
         vmtemplate_conf  = ""
 
-        Dir.mkdir(@dir) unless File.exists?(@dir)
-
         puts "Processing appliances"
         applist['appliances'].each { |app|
             id     = app["_id"]["$oid"]
@@ -97,9 +96,14 @@ class OneMarket
             print_var(tmpl, "TAGS",        app["tags"].join(', '))
             print_var(tmpl, "REGTIME",     app["creation_time"])
 
-            app_dir = "#{@dir}/#{id}"
+            if app['publisher'] == "OpenNebula Systems"
+              Dir.mkdir() unless File.exists?(app_dir)
+              app_dir = "#{@dir}/#{app['publisher'].gsub(/\s+/, '_')}/#{app['hypervisor'].downcase}/#{id}"
+            else
+              app_dir = "#{@dir}/#{app['publisher'].gsub(/\s+/, '_')}/#{id}"
+            end
             puts app_dir
-            Dir.mkdir(app_dir) unless File.exists?(app_dir)
+            FileUtils.mkdir_p app_dir
 
             if !app["files"].nil? && !app["files"][0].nil?
                 file = app["files"][0]
