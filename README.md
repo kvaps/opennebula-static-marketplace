@@ -6,7 +6,7 @@ Generate your own marketplace appliances statically.
 
 ## Demo
 
-[![screenshot](screenshot.png)](https://raw.githack.com/kvaps/addon-appmarket-static/master/public/index.html)
+[![screenshot](screenshot.png)](https://raw.githack.com/kvaps/opennebula-static-marketplace/master/public/index.html)
 
 ## Features
 
@@ -42,8 +42,8 @@ This add-on is compatible with OpenNebula 4.14.2+
 Driver installation:
 
 ```
-git clone https://github.com/kvaps/addon-appmarket-static
-cp -r addon-appmarket-static/driver/static /var/lib/one/remotes/market/
+git clone https://github.com/kvaps/opennebula-static-marketplace
+cp -r opennebula-static-marketplace/driver/static /var/lib/one/remotes/market/
 ```
 
 Update `/etc/one/oned.conf`:
@@ -87,7 +87,7 @@ Create new marketplace:
 cat > appmarket.conf <<EOT
 NAME = "Static Marketplace"
 MARKET_MAD = "static"
-ENDPOINT = "https://github.com/kvaps/addon-appmarket-static/raw/master/public/metadata/index.html"
+ENDPOINT = "https://github.com/kvaps/opennebula-static-marketplace/raw/master/public/metadata/index.html"
 EOT
 
 onedatastore create market.conf
