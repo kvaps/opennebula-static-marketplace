@@ -1,0 +1,29 @@
+name: "Debian 8 - KVM"
+logo: "https://marketplace.opennebula.systems//logos/debian.png"
+source: "https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/debian8-5.8.0-1.20190222.qcow2"
+import_id: "e902e91f-4e83-40af-b41e-b895abf0461d"
+origin_id: "-1"
+type: "IMAGE"
+publisher: "OpenNebula Systems"
+format: "qcow2"
+description: "Debian 8 image for KVM hosts"
+version: "5.8.0-1.20190222"
+tags: "debian"
+regtime: "1551174013"
+size: "2048"
+md5: "71927fd09516059bcdb9e83f36d779b7"
+image_template: |
+  DEV_PREFIX= "vd"
+  DRIVER= "qcow2"
+  TYPE= "OS"
+
+vm_template: |
+  CONTEXT = [ NETWORK  ="YES",SSH_PUBLIC_KEY  ="$USER[SSH_PUBLIC_KEY]"]
+  
+  CPU = "1"
+  GRAPHICS = [ LISTEN  ="0.0.0.0",TYPE  ="vnc"]
+  
+  MEMORY = "768"
+  OS = [ ARCH  ="x86_64"]
+  
+  LOGO = "images/logos/debian.png"

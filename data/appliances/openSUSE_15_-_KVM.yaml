@@ -1,0 +1,29 @@
+name: "openSUSE 15 - KVM"
+logo: "https://marketplace.opennebula.systems//logos/opensuse.png"
+source: "https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/opensuse15-5.8.0-1.20190222.qcow2"
+import_id: "59579548-258d-4b11-8aca-aa7c906f068a"
+origin_id: "-1"
+type: "IMAGE"
+publisher: "OpenNebula Systems"
+format: "qcow2"
+description: "openSUSE 15 image for KVM hosts"
+version: "5.8.0-1.20190222"
+tags: "opensuse"
+regtime: "1551174013"
+size: "10240"
+md5: "130d2bc10d36471fa6615b93d05dfc81"
+image_template: |
+  DEV_PREFIX= "vd"
+  DRIVER= "qcow2"
+  TYPE= "OS"
+
+vm_template: |
+  CONTEXT = [ NETWORK  ="YES",SSH_PUBLIC_KEY  ="$USER[SSH_PUBLIC_KEY]"]
+  
+  CPU = "1"
+  GRAPHICS = [ LISTEN  ="0.0.0.0",TYPE  ="vnc"]
+  
+  MEMORY = "768"
+  OS = [ ARCH  ="x86_64"]
+  
+  LOGO = "images/logos/linux.png"

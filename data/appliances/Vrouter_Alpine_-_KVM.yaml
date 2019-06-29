@@ -1,0 +1,30 @@
+name: "Vrouter Alpine - KVM"
+logo: "https://marketplace.opennebula.systems//logos/router.png"
+source: "https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/alpine-vrouter-5.0.2-0.20181121.qcow2"
+import_id: "491c7ce9-b7a6-4bff-8bd3-f5d2c1d6a8a1"
+origin_id: "-1"
+type: "IMAGE"
+publisher: "OpenNebula Systems"
+format: "qcow2"
+description: "Virtual router appliance to be used with OpenNebula 5.x. Based on Alpine linux."
+version: "5.0.2-0.20181121"
+tags: "vrouter, alpine"
+regtime: "1542792693"
+size: "256"
+md5: "47c10db30ef1c77a889de5e9727000a7"
+image_template: |
+  DEV_PREFIX= "vd"
+  DRIVER= "qcow2"
+  TYPE= "OS"
+
+vm_template: |
+  CPU = "1.0"
+  MEMORY = "128"
+  VCPU = "1"
+  CONTEXT = [ NETWORK  ="yes",SSH_PUBLIC_KEY  ="$USER[SSH_PUBLIC_KEY]"]
+  
+  GRAPHICS = [ LISTEN  ="0.0.0.0",TYPE  ="vnc"]
+  
+  NIC_DEFAULT = [ MODEL  ="virtio"]
+  
+  VROUTER = "yes"

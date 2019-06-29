@@ -1,0 +1,2 @@
+{{ range $.Site.Data.appliances }}APP="{{partial "app.html" . | base64Encode }}"
+{{ end }}

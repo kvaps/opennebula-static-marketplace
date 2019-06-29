@@ -1,8 +1,12 @@
-# OpenNebula AppMarket Static Generator
+# OpenNebula Static Marketplace
 
 ## Description
 
 Generate your own marketplace appliances statically.
+
+## Demo
+
+[![screenshot](screenshot.png)](https://raw.githack.com/kvaps/addon-appmarket-static/master/public/index.html)
 
 ## Features
 
@@ -81,7 +85,7 @@ Create new marketplace:
 cat > appmarket.conf <<EOT
 NAME = "Static Marketplace"
 MARKET_MAD = "static"
-ENDPOINT = "https://raw.githubusercontent.com/kvaps/addon-appmarket-static/master/metadata"
+ENDPOINT = "https://github.com/kvaps/addon-appmarket-static/raw/master/public/metadata/index.html"
 EOT
 
 onedatastore create market.conf
@@ -91,28 +95,24 @@ onedatastore create market.conf
 
 For creating your own marketplace:
 
-1. Clone this repo
+1. Install [Hugo](https://github.com/gohugoio/hugo)
 
-2. Remove default appliances
+2. Clone this repo
 
-   ```
-   rm -rf ./appliances/*
-   ```
-
-3. Write your own appliance:
-
-   * `app.conf` - main appliance manifest
-   * `apptemplate.conf` - variables applicable to images
-   * `vmtemplate.conf` - virtual machine template
-
-4. Save your appliance into `appliances/<myapp>`
-
-5. Generate new `metadata` file:
+3. Remove default appliances
 
    ```
-    ./generate appliances/ > metadata
+   rm -rf ./data/appliances/*
    ```
 
-6. Upload `metadata` file to some HTTP or S3-server and provide access to it
+4. Describe your appliance using yaml sytax and save it into `data/appliances/myapp.yaml`
 
-7. Specify url in `ENDPOINT` variable for the static driver in OpenNebula
+5. Generate new site
+
+   ```
+   hugo
+   ```
+
+6. Upload generated site from `public/*` or just metadata `public/metadata/index.html` to some HTTP or S3-storage and provide access to it
+
+7. Specify url in `ENDPOINT` variable to the static marketplace driver in OpenNebula

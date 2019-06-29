@@ -1,0 +1,29 @@
+name: "Debian Testing - KVM"
+logo: "https://marketplace.opennebula.systems//logos/debian.png"
+source: "https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/debian10-5.8.0-1.20190222.qcow2"
+import_id: "b72c6aac-e1bc-43d5-9782-77c343a2c881"
+origin_id: "-1"
+type: "IMAGE"
+publisher: "OpenNebula Systems"
+format: "qcow2"
+description: "Debian 10 (Testing) image for KVM hosts"
+version: "5.8.0-1.20190222"
+tags: "debian"
+regtime: "1551174013"
+size: "2048"
+md5: "2cfa524c5f7b4c4893cbdd4a152eb679"
+image_template: |
+  DEV_PREFIX= "vd"
+  DRIVER= "qcow2"
+  TYPE= "OS"
+
+vm_template: |
+  CONTEXT = [ NETWORK  ="YES",SSH_PUBLIC_KEY  ="$USER[SSH_PUBLIC_KEY]"]
+  
+  CPU = "1"
+  GRAPHICS = [ LISTEN  ="0.0.0.0",TYPE  ="vnc"]
+  
+  MEMORY = "768"
+  OS = [ ARCH  ="x86_64"]
+  
+  LOGO = "images/logos/debian.png"

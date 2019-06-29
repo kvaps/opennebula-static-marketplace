@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+	<head>
+	{{ partial "head.html" . }}
+	{{ template "_internal/google_analytics.html" . }}
+	</head>
+	<body>
+		<div class="container">	
+				{{ partial "header.html" . }}
+			<div class="main">
+				<ul id="og-grid" class="og-grid">
+					{{ range $.Site.Data.appliances }}
+					<li>
+                        <a href="{{.source}}" data-largesrc="{{.logo}}" data-title="{{.name}}" data-description="
+                            {{ with .description }}<p>{{. | markdownify}}</p>{{ end }}
+
+                            {{ with .image_template }}<h4>image template:</h4> <pre><code>{{.}}</code></pre>{{ end }}
+                            {{ with .vm_template }}<h4>vm template:</h4><pre><code>{{.}}</code></pre>{{ end }}
+                            <p><table>
+                            {{ with .publisher }}<tr><td>Publisher:</td><td>{{.}}</td></tr>{{ end }}
+                            {{ with .md5 }}<tr><td>Checksum:</td><td>{{.}} (md5)</td></tr>{{ end }}
+                            {{ with .format }}<tr><td>Format:</td><td>{{.}}</td></tr>{{ end }}
+                            {{ with .version }}<tr><td>Version:</td><td>{{.}}</td></tr>{{ end }}
+                            {{ with .size }}<tr><td>Size:</td><td>{{.}} MB</td></tr>{{ end }}
+                            {{ with .regtime }}<tr><td>Regtime:</td><td>{{.}}</td></tr>{{ end }}
+                            </table></p>
+                            " data-buttontext="{{.buttontext}}">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    {{ with .logo }}<img src="{{.}}"/>{{ end }}
+                                </div>
+                                <div class="og-title" >{{.name}}</div>
+                            </div>
+						</a>
+					</li>
+					{{ end }}
+				</ul>
+				{{ partial "footer.html" . }}
+			</div>
+		</div>
+		{{ partial "scripts.html" . }}
+	</body>
+</html>

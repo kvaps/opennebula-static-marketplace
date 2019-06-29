@@ -1,0 +1,29 @@
+name: "Fedora 30 - KVM"
+logo: "https://marketplace.opennebula.systems//logos/fedora.png"
+source: "https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/fedora30-5.8.0-1.20190506.qcow2"
+import_id: "1d7c82c7-61ff-42dc-b5c7-6b07fa7ec59f"
+origin_id: "-1"
+type: "IMAGE"
+publisher: "OpenNebula Systems"
+format: "qcow2"
+description: "Fedora 30 image for KVM hosts"
+version: "5.8.0-1.20190506"
+tags: "fedora"
+regtime: "1557140036"
+size: "4096"
+md5: "4823dcfd94a38b670586b42e6c28ff34"
+image_template: |
+  DEV_PREFIX= "vd"
+  DRIVER= "qcow2"
+  TYPE= "OS"
+
+vm_template: |
+  CONTEXT = [ NETWORK  ="YES",SSH_PUBLIC_KEY  ="$USER[SSH_PUBLIC_KEY]"]
+  
+  CPU = "1"
+  GRAPHICS = [ LISTEN  ="0.0.0.0",TYPE  ="vnc"]
+  
+  MEMORY = "768"
+  OS = [ ARCH  ="x86_64"]
+  
+  LOGO = "images/logos/fedora.png"

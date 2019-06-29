@@ -1,0 +1,28 @@
+name: "FreeBSD 12 - KVM"
+logo: "https://marketplace.opennebula.systems//logos/freebsd.png"
+source: "https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/freebsd12-5.8.0-1.20190222.qcow2"
+import_id: "786525e5-2e20-4021-b030-0a57e977a121"
+origin_id: "-1"
+type: "IMAGE"
+publisher: "OpenNebula Systems"
+format: "qcow2"
+description: "FreeBSD 12 image for KVM hosts"
+version: "5.8.0-1.20190222"
+tags: "freebsd"
+regtime: "1551174013"
+size: "4096"
+md5: "487dd803797a5ed0802e5055eeaaac67"
+image_template: |
+  DEV_PREFIX= "vd"
+  DRIVER= "qcow2"
+  TYPE= "OS"
+
+vm_template: |
+  CONTEXT = [ NETWORK  ="YES",SSH_PUBLIC_KEY  ="$USER[SSH_PUBLIC_KEY]"]
+  
+  CPU = "1"
+  GRAPHICS = [ LISTEN  ="0.0.0.0",TYPE  ="vnc"]
+  
+  MEMORY = "768"
+  OS = [ ARCH  ="x86_64"]
+

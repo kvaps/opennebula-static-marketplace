@@ -1,0 +1,29 @@
+name: "Ubuntu 14.04 - KVM"
+logo: "https://marketplace.opennebula.systems//logos/ubuntu.png"
+source: "https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/ubuntu1404-5.8.0-1.20190222.qcow2"
+import_id: "53e7c1b28fb81d6a69000003"
+origin_id: "-1"
+type: "IMAGE"
+publisher: "OpenNebula Systems"
+format: "qcow2"
+description: "Ubuntu 14.04 image for KVM hosts"
+version: "5.8.0-1.20190222"
+tags: "ubuntu"
+regtime: "1551174013"
+size: "2252"
+md5: "c45fa7a8b03e8cc54e162d87df9371c5"
+image_template: |
+  DEV_PREFIX= "vd"
+  DRIVER= "qcow2"
+  TYPE= "OS"
+
+vm_template: |
+  CONTEXT = [ NETWORK  ="YES",SSH_PUBLIC_KEY  ="$USER[SSH_PUBLIC_KEY]"]
+  
+  CPU = "1"
+  GRAPHICS = [ LISTEN  ="0.0.0.0",TYPE  ="vnc"]
+  
+  MEMORY = "768"
+  OS = [ ARCH  ="x86_64"]
+  
+  LOGO = "images/logos/ubuntu.png"

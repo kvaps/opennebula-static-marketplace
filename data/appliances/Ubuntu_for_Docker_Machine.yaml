@@ -1,0 +1,29 @@
+name: "Ubuntu for Docker Machine"
+logo: "https://marketplace.opennebula.systems//logos/default.png"
+source: "https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/docker_machine_ubuntu-14.04.qcow2c"
+import_id: "56cb3bc88fb81d0315000001"
+origin_id: "-1"
+type: "IMAGE"
+publisher: "OpenNebula Systems"
+format: "qcow2"
+description: "Ubuntu 14.04 LTS with preinstalled packages in order to work with Docker Machine"
+version: "0.6.0-2"
+tags: "docker, ubuntu"
+regtime: "1456159688"
+size: "10240"
+md5: "3493d7cbaa20143b2ee3ffc3ece73077"
+image_template: |
+  DEV_PREFIX= "vd"
+  DRIVER= "qcow2"
+  TYPE= "OS"
+
+vm_template: |
+  CONTEXT = [ NETWORK  ="YES",SSH_PUBLIC_KEY  ="$USER[SSH_PUBLIC_KEY]"]
+  
+  CPU = "1"
+  GRAPHICS = [ LISTEN  ="0.0.0.0",TYPE  ="vnc"]
+  
+  MEMORY = "768"
+  OS = [ ARCH  ="x86_64"]
+  
+  LOGO = "images/logos/ubuntu.png"
