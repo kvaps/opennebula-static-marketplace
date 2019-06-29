@@ -31,6 +31,8 @@ More info:
 
 * Images metadata imported automatically from official [OpenNebula Marketplace](http://marketplace.opennebula.systems/) and managed by [OpenNebula Systems](http://opennebula.systems/).
 
+  > **NOTE:** If you want to generate you own images take a look on [OpenNebula Images](https://github.com/kvaps/opennebula-images) generator project.
+
 ## Compatibility
 
 This add-on is compatible with OpenNebula 4.14.2+
