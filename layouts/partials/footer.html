@@ -1,3 +1,5 @@
 <footer>			
-	{{ with .Site.Params.footertext }}{{ . | markdownify }}{{ end }}
+    {{ with .Site.Params.footertext }}<div class="footercenter">{{ . | markdownify }}</div>{{ end }}
+    {{ with .Site.Params.footerleft }}<div class="footerleft">{{ . | markdownify }}</div>{{ end }}
+    {{ with .Site.Params.footerright }}<div class="footerright">{{ . | markdownify }}</div>{{ end }}
 </footer>

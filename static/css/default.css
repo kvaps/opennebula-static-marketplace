@@ -79,7 +79,21 @@ a {
 	text-align: center;
 	padding: 50px 20px;
 }
-footer {
-    float: right;
-    padding-right: 40px;
+.footercenter {
+    padding: 50px 20% 50px 20%;
+}
+.footercenter p {
+    padding: 5px 0 5px 0;
+    text-align: center;
+}
+.footerleft {
+    float: left;
+    padding: 20px;
+    width: 50%;
+}
+.footerright {
+    float: left;
+    text-align: right;
+    padding: 20px;
+    width: 50%;
 }
