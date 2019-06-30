@@ -1,0 +1,29 @@
+name: "Debian 9"
+logo: "/logos/debian.png"
+source: "https://github.com/kvaps/opennebula-images/raw/master/images/debian-9.qcow2"
+import_id: "50f553e0-a9cf-4b5f-ab9a-df1349abef29"
+origin_id: "-1"
+type: "IMAGE"
+publisher: "kvaps"
+format: "qcow2"
+description: "Debian 9 image for KVM hosts"
+version: "5.8.0-1.20190627"
+tags: "debian"
+regtime: "1561810835"
+size: "2048"
+md5: "e38360e89a43dd706fe011c09a46470e"
+image_template: |
+  DEV_PREFIX= "vd"
+  DRIVER= "qcow2"
+  TYPE= "OS"
+
+vm_template: |
+  CONTEXT = [ NETWORK  ="YES",SSH_PUBLIC_KEY  ="$USER[SSH_PUBLIC_KEY]"]
+  
+  CPU = "1"
+  GRAPHICS = [ LISTEN  ="0.0.0.0",TYPE  ="vnc"]
+  
+  MEMORY = "128"
+  OS = [ ARCH  ="x86_64"]
+  
+  LOGO = "images/logos/debian.png"

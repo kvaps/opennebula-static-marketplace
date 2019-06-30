@@ -1,0 +1,29 @@
+name: "Fedora 30"
+logo: "/logos/fedora.png"
+source: "https://github.com/kvaps/opennebula-images/raw/master/images/fedora-30.qcow2"
+import_id: "c0990102-ddc1-4945-ac48-4aac34d380b7"
+origin_id: "-1"
+type: "IMAGE"
+publisher: "kvaps"
+format: "qcow2"
+description: "Fedora 30 image for KVM hosts"
+version: "5.8.0-1.20190627"
+tags: "fedora"
+regtime: "1561810835"
+size: "2048"
+md5: "6b20079943369d43546631c1c1ce8bea"
+image_template: |
+  DEV_PREFIX= "vd"
+  DRIVER= "qcow2"
+  TYPE= "OS"
+
+vm_template: |
+  CONTEXT = [ NETWORK  ="YES",SSH_PUBLIC_KEY  ="$USER[SSH_PUBLIC_KEY]"]
+  
+  CPU = "1"
+  GRAPHICS = [ LISTEN  ="0.0.0.0",TYPE  ="vnc"]
+  
+  MEMORY = "128"
+  OS = [ ARCH  ="x86_64"]
+  
+  LOGO = "images/logos/fedora.png"

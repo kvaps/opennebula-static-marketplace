@@ -29,9 +29,8 @@ More info:
 
 * Author: [kvaps](http://github.com/kvaps)
 
-* Images metadata imported automatically from official [OpenNebula Marketplace](http://marketplace.opennebula.systems/) and managed by [OpenNebula Systems](http://opennebula.systems/).
+* Images generated automatically using **[OpenNebula Images Generator](https://github.com/kvaps/opennebula-images)**
 
-  **If you want to generate you own images please take a look on [OpenNebula Images Generator](https://github.com/kvaps/opennebula-images) project.**
 
 ## Compatibility
 

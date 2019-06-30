@@ -1,0 +1,29 @@
+name: "Centos 6"
+logo: "/logos/centos.png"
+source: "https://github.com/kvaps/opennebula-images/raw/master/images/centos-6.qcow2"
+import_id: "645c1024-6ec2-4275-8dff-da83c5d7ddcd"
+origin_id: "-1"
+type: "IMAGE"
+publisher: "kvaps"
+format: "qcow2"
+description: "Centos 6 image for KVM hosts"
+version: "5.8.0-1.20190627"
+tags: "centos"
+regtime: "1561810835"
+size: "2048"
+md5: "04086c3487982eb41b3f4fb5c86f7eaa"
+image_template: |
+  DEV_PREFIX= "vd"
+  DRIVER= "qcow2"
+  TYPE= "OS"
+
+vm_template: |
+  CONTEXT = [ NETWORK  ="YES",SSH_PUBLIC_KEY  ="$USER[SSH_PUBLIC_KEY]"]
+  
+  CPU = "1"
+  GRAPHICS = [ LISTEN  ="0.0.0.0",TYPE  ="vnc"]
+  
+  MEMORY = "128"
+  OS = [ ARCH  ="x86_64"]
+  
+  LOGO = "images/logos/centos.png"

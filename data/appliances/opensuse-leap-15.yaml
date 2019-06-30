@@ -1,0 +1,30 @@
+
+name: "openSUSE Leap 15"
+logo: "/logos/opensuse.png"
+source: "https://github.com/kvaps/opennebula-images/raw/master/images/opensuse-leap-15.qcow2"
+import_id: "2a82afb8-1c1e-484c-b25d-b4b6671efc7a"
+origin_id: "-1"
+type: "IMAGE"
+publisher: "kvaps"
+format: "qcow2"
+description: "openSUSE Leap 15 image for KVM hosts"
+version: "5.8.0-1.20190627"
+tags: "opensuse"
+regtime: "1561810835"
+size: "2048"
+md5: "54d7d96d9ce9dd47a2fe63bcccbea795"
+image_template: |
+  DEV_PREFIX= "vd"
+  DRIVER= "qcow2"
+  TYPE= "OS"
+
+vm_template: |
+  CONTEXT = [ NETWORK  ="YES",SSH_PUBLIC_KEY  ="$USER[SSH_PUBLIC_KEY]"]
+  
+  CPU = "1"
+  GRAPHICS = [ LISTEN  ="0.0.0.0",TYPE  ="vnc"]
+  
+  MEMORY = "128"
+  OS = [ ARCH  ="x86_64"]
+  
+  LOGO = "images/logos/opensuse.png"

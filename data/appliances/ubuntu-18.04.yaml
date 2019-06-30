@@ -1,0 +1,29 @@
+name: "Ubuntu 18.04"
+logo: "/logos/ubuntu.png"
+source: "https://github.com/kvaps/opennebula-images/raw/master/images/ubuntu-18.04.qcow2"
+import_id: "de21cb99-14b9-47f8-a87b-b212685b15f5"
+origin_id: "-1"
+type: "IMAGE"
+publisher: "kvaps"
+format: "qcow2"
+description: "Ubuntu 18.04 image for KVM hosts"
+version: "5.8.0-1.20190627"
+tags: "ubuntu"
+regtime: "1561810835"
+size: "2048"
+md5: "d12ade985c13a4d38428075a9c68f43b"
+image_template: |
+  DEV_PREFIX= "vd"
+  DRIVER= "qcow2"
+  TYPE= "OS"
+
+vm_template: |
+  CONTEXT = [ NETWORK  ="YES",SSH_PUBLIC_KEY  ="$USER[SSH_PUBLIC_KEY]"]
+  
+  CPU = "1"
+  GRAPHICS = [ LISTEN  ="0.0.0.0",TYPE  ="vnc"]
+  
+  MEMORY = "128"
+  OS = [ ARCH  ="x86_64"]
+  
+  LOGO = "images/logos/ubuntu.png"
