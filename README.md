@@ -4,9 +4,18 @@
 
 Generate your own marketplace appliances statically.
 
+![screenshot](screenshot.png)
+
 ## Demo
 
-[![screenshot](screenshot.png)](https://raw.githack.com/kvaps/opennebula-static-marketplace/master/exampleSite/public/index.html)
+Marketplace with appliances imported from the official OpenNebula Marketplace:
+
+* **[OpenNebula Static Marketplace](https://raw.githack.com/kvaps/opennebula-static-marketplace/master/exampleSite/public/index.html)**
+
+Marketplace with own appliances:
+
+* **[WEDOS OpenNebula Marketplace](https://marketplace.opennebula.wedos.cloud/)**
+
 
 ## Features
 
