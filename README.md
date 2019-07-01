@@ -6,7 +6,7 @@ Generate your own marketplace appliances statically.
 
 ## Demo
 
-[![screenshot](screenshot.png)](https://raw.githack.com/kvaps/opennebula-static-marketplace/master/public/index.html)
+[![screenshot](screenshot.png)](https://raw.githack.com/kvaps/opennebula-static-marketplace/master/exampleSite/public/index.html)
 
 ## Features
 
@@ -87,7 +87,7 @@ Create new marketplace:
 cat > appmarket.conf <<EOT
 NAME = "Static Marketplace"
 MARKET_MAD = "static"
-ENDPOINT = "https://github.com/kvaps/opennebula-static-marketplace/raw/master/public/metadata/index.html"
+ENDPOINT = "https://github.com/kvaps/opennebula-static-marketplace/raw/master/exampleSite/public/metadata/index.html"
 EOT
 
 onedatastore create market.conf
@@ -99,22 +99,26 @@ For creating your own marketplace:
 
 1. Install [Hugo](https://github.com/gohugoio/hugo)
 
-2. Clone this repo
+2. Initialize new site and marketplace theme:
 
-3. Remove default appliances
-
+   ```bash
+   hugo new site marketplace -f yaml
+   cd marketplace
+   git clone https://github.com/kvaps/opennebula-static-marketplace themes/opennebula-static-marketplace
+   cp -r themes/opennebula-static-marketplace/content/metadata/ content/metadata/
+   echo 'theme: opennebula-static-marketplace' > config.yaml
    ```
-   rm -rf ./data/appliances/*
-   ```
 
-4. Describe your appliance using yaml sytax and save it into `data/appliances/myapp.yaml`
 
-5. Generate new site
+3. Describe your appliance using yaml sytax and save it into `data/appliances/myapp.yaml` *(use examples from [exampleSite](exampleSite/data/appliances) directory)*
 
-   ```
+4. Generate new site
+
+   ```bash
    hugo
    ```
 
-6. Upload generated site from `public/*` or just metadata `public/metadata/index.html` to some HTTP or S3-storage and provide access to it
+5. Upload generated site from `public/*` or just metadata `public/metadata/index.html` to some HTTP or S3-server and provide access to it
 
-7. Specify url in `ENDPOINT` variable to the static marketplace driver in OpenNebula
+6. Specify url in `ENDPOINT` variable to the static marketplace driver in OpenNebula
+
