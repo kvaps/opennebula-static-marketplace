@@ -1,0 +1,42 @@
+{{/* vim: set filetype=gohtmltmpl: */}}
+{{- define "opennebula.configItem" -}}
+{{- if eq (printf "%T" .value) "bool" }}
+{{- .key | upper }}  = {{ .value | cond "YES" "NO" }}
+{{- else if eq (printf "%T" .value) "string" }}
+{{- .key | upper }} = "{{ .value }}"
+{{- else if eq (printf "%T" .value) "map[string]interface {}" }}
+{{- .key | upper }} = [
+{{- $comma := false -}}
+{{- range $key, $value := .value }}
+  {{- if $comma -}},{{- end -}}
+  {{- if eq (printf "%T" $value) "bool" }}
+  {{ $key | upper }}  = {{ $value | cond "YES" "NO" }}
+  {{- else if or (eq (printf "%T" $value) "string") (eq (printf "%T" $value) "<nil>") }}
+  {{ $key | upper }} = "{{ $value }}"
+  {{- else }}{{/* numberic */}}
+  {{ $key | upper }} = {{ $value }}
+  {{- end }}
+  {{- $comma = true -}}
+  {{- end }}
+{{- " ]" }}
+{{- else }}{{/* numberic */}}
+{{- .key | upper }} = {{ .value }}
+{{- end }}
+{{- end }}
+
+{{- define "opennebula.config" -}}
+{{- $newline := false -}}
+{{- range $key, $value := . }}
+{{- if $newline -}}{{ "\n" }}{{- end -}}
+{{- if eq (printf "%T" $value) "[]interface {}" }}
+  {{ range $keyz, $valuez := $value }}
+  {{- template "opennebula.configItem" dict "key" $key "value" $valuez }}
+  {{- end }}
+{{- else }}
+  {{- template "opennebula.configItem" dict "key" $key "value" $value }}
+{{- end }}
+{{- $newline = true -}}
+{{- end }}
+{{- end }}
+
+{{- template "opennebula.config" . }}

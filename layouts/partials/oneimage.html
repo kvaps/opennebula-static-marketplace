@@ -1,0 +1,18 @@
+{{/* vim: set filetype=gohtmltmpl: */}}
+{{- $ignoreKeys := " checksum name url size " }}
+{{- $newline := false -}}
+{{- range $key, $value := . }}
+{{- if in $ignoreKeys (printf " %s " $key | lower) }}
+{{- else if eq (printf "%T" $value) "[]interface {}" }}
+  {{- if $newline -}}{{ "\n" }}{{- end -}}
+  {{- range $keyz, $valuez := $value }}
+  {{- template "opennebula.configItem" dict "key" $key "value" $valuez }}
+  {{- end }}
+{{- else }}
+  {{- if $newline -}}{{ "\n" }}{{- end -}}
+  {{- template "opennebula.configItem" dict "key" $key "value" $value }}
+{{- end }}
+{{- if not (in $ignoreKeys (printf " %s " $key | lower)) }}
+{{- $newline = true -}}
+{{- end }}
+{{- end }}
