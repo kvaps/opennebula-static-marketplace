@@ -10,24 +10,23 @@
 			<div class="main">
 				<ul id="og-grid" class="og-grid">
 					{{ range $.Site.Data.appliances }}
-					<li>
-                        <a href="{{.source}}" data-largesrc="{{.logo}}" data-title="{{.name}}" data-description="
-                            {{ with .description }}<p>{{. | markdownify}}</p>{{ end }}
-
-                            {{ with .image_template }}<h4>image template:</h4> <pre><code>{{.}}</code></pre>{{ end }}
-                            {{ with .vm_template }}<h4>vm template:</h4><pre><code>{{.}}</code></pre>{{ end }}
+          <li>
+            <a {{ range .images }}{{ with .url }} href="{{ . }}"{{ end }}{{ end }} data-largesrc="{{.logo | default "logos/default.svg" }}" data-title="{{.name}}" data-description="
+                            {{ with .description }}<pre><p>{{. | markdownify }}</p></pre>{{ end }}
+                            {{ range .images }}<h4>image template:</h4> <pre><code>{{ partial "oneimage.html" . }}</code></pre>{{ end }}
+                            {{ with .opennebula_template }}<h4>vm template:</h4><pre><code>{{ partial "oneconf.html" . }}</code></pre>{{ end }}
                             <p><table>
                             {{ with .publisher }}<tr><td>Publisher:</td><td>{{.}}</td></tr>{{ end }}
-                            {{ with .md5 }}<tr><td>Checksum:</td><td>{{.}} (md5)</td></tr>{{ end }}
+                            {{ range .images }}{{ with .checksum }}{{ with .md5 }}<tr><td>Checksum:</td><td>{{.}} (md5)</td></tr>{{ end }}{{ end }}{{ end }}
                             {{ with .format }}<tr><td>Format:</td><td>{{.}}</td></tr>{{ end }}
                             {{ with .version }}<tr><td>Version:</td><td>{{.}}</td></tr>{{ end }}
-                            {{ with .size }}<tr><td>Size:</td><td>{{.}} MB</td></tr>{{ end }}
-                            {{ with .regtime }}<tr><td>Regtime:</td><td>{{.}}</td></tr>{{ end }}
+                            {{ range .images }}{{ with .size }}<tr><td>Size:</td><td>{{ (div . 1048576) }} MB</td></tr>{{ end }}{{ end }}
+                            {{ with .creation_time }}<tr><td>Regtime:</td><td>{{.}}</td></tr>{{ end }}
                             </table></p>
                             " data-buttontext="{{.buttontext}}">
                             <div class="og-tile">
                                 <div class="og-thumb">
-                                    {{ with .logo }}<img src="{{.}}"/>{{ end }}
+                                    <img src="{{.logo | default "logos/default.svg" }}"/>
                                 </div>
                                 <div class="og-title" >{{.name}}</div>
                             </div>

@@ -9,7 +9,7 @@
 		<meta name="keywords" content="" />
 		<meta name="author" content="" />
 		<link rel="icon" href="favicon.ico" />
-		<meta name="generator" content="Hugo 0.54.0" />
+		<meta name="generator" content="Hugo 0.62.0" />
 		<style>
 		body {
 		background: ;
@@ -31,781 +31,188 @@
 			<div class="main">
 				<ul id="og-grid" class="og-grid">
 					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/alpine36-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/alpine.png" data-title="Alpine Linux 3.6 - KVM" data-description="
-                            <p>Alpine Linux 3.6 image for KVM hosts</p>
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/empty1024.raw" data-largesrc="ubuntu.png" data-title="Ubuntu 16.04 - EC2" data-description="
+                            <p>Ubuntu 16.04 image ready for the OpenNebula Cloud Bursting on the Amazon EC2.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+EC2 image details:
 
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
+Region: us-east-1
+AMI: ami-0a425bbe3ceadb8a0
+Virtualization Type: HVM
+Root Device Type: EBS
+Volume Type: GP2
+
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;hd&#34;
+DRIVER = &#34;raw&#34;
+TYPE = &#34;OS&#34;
 </code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;128&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/linux.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>acd7b002c410fbbee5d14108d925b962 (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>10240 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/alpine.png"/>
-                                </div>
-                                <div class="og-title" >Alpine Linux 3.6 - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/alpine37-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/alpine.png" data-title="Alpine Linux 3.7 - KVM" data-description="
-                            <p>Alpine Linux 3.7 image for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;128&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/linux.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>ee06ef39cacaf14fd6436e181db17550 (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>512 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/alpine.png"/>
-                                </div>
-                                <div class="og-title" >Alpine Linux 3.7 - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/alpine38-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/alpine.png" data-title="Alpine Linux 3.8 - KVM" data-description="
-                            <p>Alpine Linux 3.8 image for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;128&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/linux.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>91b1991abae50f0c9fea0f3a8a3a0664 (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>512 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/alpine.png"/>
-                                </div>
-                                <div class="og-title" >Alpine Linux 3.8 - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/amazon2-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/amazon.png" data-title="Amazon Linux 2 - KVM" data-description="
-                            <p>Amazon Linux 2 image for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/linux.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>ef72c371291bc0de03fd351435494b42 (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>25600 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/amazon.png"/>
-                                </div>
-                                <div class="og-title" >Amazon Linux 2 - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/centos6-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/centos-5.5.png" data-title="CentOS 6 - KVM" data-description="
-                            <p>CentOS 6 image for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/centos.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>5b4aac1fa7facfb7c4c2dcf52c30092b (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>8192 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/centos-5.5.png"/>
-                                </div>
-                                <div class="og-title" >CentOS 6 - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/empty1024.raw" data-largesrc="https://marketplace.opennebula.systems//logos/centos-5.5.png" data-title="CentOS 7 - EC2" data-description="
-                            <p>CentOS 7 image for Amazon EC2</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;hd&#34;
-DRIVER= &#34;raw&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
 CPU = &#34;0.1&#34;
-MEMORY = &#34;256&#34;
 INPUTS_ORDER = &#34;EC2_INSTANCETYPE,EC2_SECURITYGROUPIDS,EC2_SUBNETID&#34;
-PUBLIC_CLOUD = [ AMI  =&#34;ami-09f5c274338dc2e36&#34;,INSTANCETYPE  =&#34;$EC2_INSTANCETYPE&#34;,SECURITYGROUPIDS  =&#34;$EC2_SECURITYGROUPIDS&#34;,SUBNETID  =&#34;$EC2_SUBNETID&#34;,TYPE  =&#34;ec2&#34;]
-
+LOGO = &#34;images/logos/ubuntu.png&#34;
+MEMORY = &#34;256&#34;
+PUBLIC_CLOUD = [
+  AMI = &#34;ami-0a425bbe3ceadb8a0&#34;,
+  INSTANCETYPE = &#34;$EC2_INSTANCETYPE&#34;,
+  SECURITYGROUPIDS = &#34;$EC2_SECURITYGROUPIDS&#34;,
+  SUBNETID = &#34;$EC2_SUBNETID&#34;,
+  TYPE = &#34;ec2&#34; ]
 SCHED_REQUIREMENTS = &#34;(PUBLIC_CLOUD=YES) &amp; (REGION_NAME=\&#34;us-east-1\&#34;)&#34;
-USER_INPUTS = [ EC2_INSTANCETYPE  =&#34;M|text|EC2 Instance Type&#34;,EC2_SECURITYGROUPIDS  =&#34;M|text|EC2 Security Group IDs&#34;,EC2_SUBNETID  =&#34;M|text|EC2 Subnet ID&#34;]
-
-LOGO = &#34;images/logos/centos.png&#34;
+USER_INPUTS = [
+  EC2_INSTANCETYPE = &#34;M|text|EC2 Instance Type&#34;,
+  EC2_SECURITYGROUPIDS = &#34;M|text|EC2 Security Group IDs&#34;,
+  EC2_SUBNETID = &#34;M|text|EC2 Subnet ID&#34; ]
 </code></pre>
                             <p><table>
                             <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
                             <tr><td>Checksum:</td><td>0f343b0931126a20f133d67c2b018a3b (md5)</td></tr>
                             <tr><td>Format:</td><td>ami</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190226</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-1.20191126</td></tr>
                             <tr><td>Size:</td><td>0 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
+                            <tr><td>Regtime:</td><td>1574853626</td></tr>
                             </table></p>
                             " data-buttontext="">
                             <div class="og-tile">
                                 <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/centos-5.5.png"/>
+                                    <img src="ubuntu.png"/>
                                 </div>
-                                <div class="og-title" >CentOS 7 - EC2</div>
+                                <div class="og-title" >Ubuntu 16.04 - EC2</div>
                             </div>
 						</a>
 					</li>
 					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/centos7-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/centos-5.5.png" data-title="CentOS 7 - KVM" data-description="
-                            <p>CentOS 7 image for KVM hosts</p>
+          <li>
+            <a  href="https://opennebula-marketplace.s3.amazonaws.com/service_aws_greengrass-1.9.1-5.10.0-1.20191122.qcow2" data-largesrc="aws-iot-greengrass.png" data-title="Service AWS IoT Greengrass - KVM" data-description="
+                            <p>Appliance with preinstalled AWS IoT Greengrass SDK and services to run
+Core, IoT device, or both roles on the same instance. Supports semi-manual
+provisioning mode of entities precreated on AWS, or fully automatic
+provision of new Core (and Greengrass Group) and IoT Device over API.
+See the dedicated documentation.
+Available (AWS Lambda) runtimes:
 
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
+Python 2.7
+
+Initial configuration can be customized via parameters:
+
+ONEAPP_AWSGG_ROLE - Deployment role (core, device, bulk, empty)
+ONEAPP_AWSGG_BULK_DEVICES - Number of devices created in bulk role (default 1)
+ONEAPP_AWSGG_SSL_CERT - Core/Device certificate
+ONEAPP_AWSGG_SSL_PRIVKEY - Core/Device private key
+ONEAPP_AWSGG_SSL_PUBKEY - Core/Device public key
+ONEAPP_AWSGG_CONFIG - (Core) Greengrass Group config file
+ONEAPP_AWSGG_GROUP - Greengrass Group name to create
+ONEAPP_AWSGG_DEVICE_NAME - Device name (postfixed by random for bulk role)
+ONEAPP_AWSGG_DEVICE_HASH - Hash prefix (created by AWS)
+ONEAPP_AWSGG_ENDPOINT - IoT Greengrass Endpoint
+ONEAPP_AWSGG_ACCESS_KEY_ID - AWS Access Key ID
+ONEAPP_AWSGG_ACCESS_SECRET_KEY - AWS Access Secret Key
+ONEAPP_AWSGG_GGC_USER - OS user name to own process/files
+ONEAPP_AWSGG_GGC_GROUP - OS user group to own process/files
+ONEAPP_AWSGG_IOTMQTTPORT - MQTT port to IoT (8883 or 443, default 8883)
+ONEAPP_AWSGG_IOTHTTPPORT - HTTPS port to IoT (8443 or 443, default 8443)
+ONEAPP_AWSGG_GGHTTPPORT - HTTPS port to GG (8443 or 443, default 8443)
+
+If no suitable contextualization parameters are provided, the virtual machines
+boots only into the AWS IoT Greengrass compatible system environment and don&#39;t
+configure anything.
+The use of this appliance is governed by the terms of the AWS Greengrass Core License Agreement or other agreement with AWS governing the use of AWS services.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
 </code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  ONEAPP_AWSGG_ACCESS_KEY_ID = &#34;$ONEAPP_AWSGG_ACCESS_KEY_ID&#34;,
+  ONEAPP_AWSGG_ACCESS_SECRET_KEY = &#34;$ONEAPP_AWSGG_ACCESS_SECRET_KEY&#34;,
+  ONEAPP_AWSGG_BULK_DEVICES = &#34;$ONEAPP_AWSGG_BULK_DEVICES&#34;,
+  ONEAPP_AWSGG_CONFIG = &#34;$ONEAPP_AWSGG_CONFIG&#34;,
+  ONEAPP_AWSGG_DEVICE_HASH = &#34;$ONEAPP_AWSGG_DEVICE_HASH&#34;,
+  ONEAPP_AWSGG_DEVICE_NAME = &#34;$ONEAPP_AWSGG_DEVICE_NAME&#34;,
+  ONEAPP_AWSGG_ENDPOINT = &#34;$ONEAPP_AWSGG_ENDPOINT&#34;,
+  ONEAPP_AWSGG_GGC_GROUP = &#34;$ONEAPP_AWSGG_GGC_GROUP&#34;,
+  ONEAPP_AWSGG_GGC_USER = &#34;$ONEAPP_AWSGG_GGC_USER&#34;,
+  ONEAPP_AWSGG_GGHTTPPORT = &#34;$ONEAPP_AWSGG_GGHTTPPORT&#34;,
+  ONEAPP_AWSGG_GROUP = &#34;$ONEAPP_AWSGG_GROUP&#34;,
+  ONEAPP_AWSGG_IOTHTTPPORT = &#34;$ONEAPP_AWSGG_IOTHTTPPORT&#34;,
+  ONEAPP_AWSGG_IOTMQTTPORT = &#34;$ONEAPP_AWSGG_IOTMQTTPORT&#34;,
+  ONEAPP_AWSGG_ROLE = &#34;$ONEAPP_AWSGG_ROLE&#34;,
+  ONEAPP_AWSGG_SSL_CERT = &#34;$ONEAPP_AWSGG_SSL_CERT&#34;,
+  ONEAPP_AWSGG_SSL_PRIVKEY = &#34;$ONEAPP_AWSGG_SSL_PRIVKEY&#34;,
+  ONEAPP_AWSGG_SSL_PUBKEY = &#34;$ONEAPP_AWSGG_SSL_PUBKEY&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
 CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/centos.png&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INPUTS_ORDER = &#34;ONEAPP_AWSGG_ROLE,ONEAPP_AWSGG_ENDPOINT,ONEAPP_AWSGG_ACCESS_KEY_ID,ONEAPP_AWSGG_ACCESS_SECRET_KEY,ONEAPP_AWSGG_GROUP,ONEAPP_AWSGG_DEVICE_NAME,ONEAPP_AWSGG_BULK_DEVICES,ONEAPP_AWSGG_SSL_CERT,ONEAPP_AWSGG_SSL_PRIVKEY,ONEAPP_AWSGG_SSL_PUBKEY,ONEAPP_AWSGG_CONFIG,ONEAPP_AWSGG_DEVICE_HASH,ONEAPP_AWSGG_GGC_USER,ONEAPP_AWSGG_GGC_GROUP,ONEAPP_AWSGG_IOTMQTTPORT,ONEAPP_AWSGG_GGHTTPPORT,ONEAPP_AWSGG_IOTHTTPPORT&#34;
+MEMORY = &#34;1024&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+USER_INPUTS = [
+  ONEAPP_AWSGG_ACCESS_KEY_ID = &#34;O|password|AWS Access Key ID&#34;,
+  ONEAPP_AWSGG_ACCESS_SECRET_KEY = &#34;O|password|AWS Access Secret Key&#34;,
+  ONEAPP_AWSGG_BULK_DEVICES = &#34;O|number|Numfer of Devices| |1&#34;,
+  ONEAPP_AWSGG_CONFIG = &#34;O|text64|(Core) Greengrass Group Config File&#34;,
+  ONEAPP_AWSGG_DEVICE_HASH = &#34;O|text|Device Hash Prefix&#34;,
+  ONEAPP_AWSGG_DEVICE_NAME = &#34;O|text|Device Name&#34;,
+  ONEAPP_AWSGG_ENDPOINT = &#34;O|text|IoT Greengrass Endpoint&#34;,
+  ONEAPP_AWSGG_GGC_GROUP = &#34;O|text|Instance OS group&#34;,
+  ONEAPP_AWSGG_GGC_USER = &#34;O|text|Instance OS user&#34;,
+  ONEAPP_AWSGG_GGHTTPPORT = &#34;O|list|HTTPS Port to Greengrass|8443,443|8443&#34;,
+  ONEAPP_AWSGG_GROUP = &#34;O|text|Greengrass Group Name&#34;,
+  ONEAPP_AWSGG_IOTHTTPPORT = &#34;O|list|HTTPS Port to IoT|8443,443|8443&#34;,
+  ONEAPP_AWSGG_IOTMQTTPORT = &#34;O|list|MQTT port to IoT|8883,443|8883&#34;,
+  ONEAPP_AWSGG_ROLE = &#34;O|list|Deployment Role|,core,device,bulk|&#34;,
+  ONEAPP_AWSGG_SSL_CERT = &#34;O|text64|Core/Device Certificate&#34;,
+  ONEAPP_AWSGG_SSL_PRIVKEY = &#34;O|text64|Core/Device Private Key&#34;,
+  ONEAPP_AWSGG_SSL_PUBKEY = &#34;O|text64|Core/Device Public Key&#34; ]
 </code></pre>
                             <p><table>
                             <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>dbc81ae029a17e12e51c0aac3cc5ac4d (md5)</td></tr>
+                            <tr><td>Checksum:</td><td>803019612fe8ce40ef6fb60e8989a8ef (md5)</td></tr>
                             <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>8192 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
+                            <tr><td>Version:</td><td>1.9.1-5.10.0-1.20191122</td></tr>
+                            <tr><td>Size:</td><td>4096 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859862</td></tr>
                             </table></p>
                             " data-buttontext="">
                             <div class="og-tile">
                                 <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/centos-5.5.png"/>
+                                    <img src="aws-iot-greengrass.png"/>
                                 </div>
-                                <div class="og-title" >CentOS 7 - KVM</div>
+                                <div class="og-title" >Service AWS IoT Greengrass - KVM</div>
                             </div>
 						</a>
 					</li>
 					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/debian8-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/debian.png" data-title="Debian 8 - KVM" data-description="
-                            <p>Debian 8 image for KVM hosts</p>
+          <li>
+            <a  href="http://opennebula-marketplace.s3.amazonaws.com/ttyvd-context.qcow2" data-largesrc="Ttylinux-8.0.png" data-title="Ttylinux - KVM" data-description="
+                            <p>TTYLinux is a very small Linux distribution that
+is mainly used for testing purposes.
+The login information for this image is:
 
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
+login: root
+password: password
+
+NOTE: The contextualization of this image is really simple. You can not set the network mask or the gateway. It&#39;s always a C class and gateway is x.y.z.1.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
 </code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/debian.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>71927fd09516059bcdb9e83f36d779b7 (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>2048 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/debian.png"/>
-                                </div>
-                                <div class="og-title" >Debian 8 - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/empty1024.raw" data-largesrc="https://marketplace.opennebula.systems//logos/debian.png" data-title="Debian 9 - EC2" data-description="
-                            <p>Debian 9 image for Amazon EC2</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;hd&#34;
-DRIVER= &#34;raw&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
 CPU = &#34;0.1&#34;
-MEMORY = &#34;256&#34;
-INPUTS_ORDER = &#34;EC2_INSTANCETYPE,EC2_SECURITYGROUPIDS,EC2_SUBNETID&#34;
-PUBLIC_CLOUD = [ AMI  =&#34;ami-0f383f87ac482f6b8&#34;,INSTANCETYPE  =&#34;$EC2_INSTANCETYPE&#34;,SECURITYGROUPIDS  =&#34;$EC2_SECURITYGROUPIDS&#34;,SUBNETID  =&#34;$EC2_SUBNETID&#34;,TYPE  =&#34;ec2&#34;]
-
-SCHED_REQUIREMENTS = &#34;(PUBLIC_CLOUD=YES) &amp; (REGION_NAME=\&#34;us-east-1\&#34;)&#34;
-USER_INPUTS = [ EC2_INSTANCETYPE  =&#34;M|text|EC2 Instance Type&#34;,EC2_SECURITYGROUPIDS  =&#34;M|text|EC2 Security Group IDs&#34;,EC2_SUBNETID  =&#34;M|text|EC2 Subnet ID&#34;]
-
-LOGO = &#34;images/logos/debian.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>0f343b0931126a20f133d67c2b018a3b (md5)</td></tr>
-                            <tr><td>Format:</td><td>ami</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190226</td></tr>
-                            <tr><td>Size:</td><td>0 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/debian.png"/>
-                                </div>
-                                <div class="og-title" >Debian 9 - EC2</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/debian9-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/debian.png" data-title="Debian 9 - KVM" data-description="
-                            <p>Debian 9 image for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/debian.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>6f0ad30d6e5ebb39705dce1be41aea7c (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>2048 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/debian.png"/>
-                                </div>
-                                <div class="og-title" >Debian 9 - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/debian10-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/debian.png" data-title="Debian Testing - KVM" data-description="
-                            <p>Debian 10 (Testing) image for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/debian.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>2cfa524c5f7b4c4893cbdd4a152eb679 (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>2048 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/debian.png"/>
-                                </div>
-                                <div class="og-title" >Debian Testing - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/devuan1-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/devuan.png" data-title="Devuan 1 - KVM" data-description="
-                            <p>Devuan 1 image for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
 LOGO = &#34;images/logos/linux.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>94428b1b6d88ba696406c6d3ccab3fd1 (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>20479 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/devuan.png"/>
-                                </div>
-                                <div class="og-title" >Devuan 1 - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/devuan2-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/devuan.png" data-title="Devuan 2 - KVM" data-description="
-                            <p>Devuan 2 image for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/linux.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>dca77ab7b807a68d7c3667f92444240f (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>20479 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/devuan.png"/>
-                                </div>
-                                <div class="og-title" >Devuan 2 - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/fedora28-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/fedora.png" data-title="Fedora 28 - KVM" data-description="
-                            <p>Fedora 28 image for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/fedora.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>42eba4d1827a320b4c2eafd37deffee4 (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>4096 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/fedora.png"/>
-                                </div>
-                                <div class="og-title" >Fedora 28 - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/fedora29-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/fedora.png" data-title="Fedora 29 - KVM" data-description="
-                            <p>Fedora 29 image for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/fedora.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>6821ec5db47c2539e590dc76fec088d8 (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>4096 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/fedora.png"/>
-                                </div>
-                                <div class="og-title" >Fedora 29 - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/fedora30-5.8.0-1.20190506.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/fedora.png" data-title="Fedora 30 - KVM" data-description="
-                            <p>Fedora 30 image for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/fedora.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>4823dcfd94a38b670586b42e6c28ff34 (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190506</td></tr>
-                            <tr><td>Size:</td><td>4096 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1557140036</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/fedora.png"/>
-                                </div>
-                                <div class="og-title" >Fedora 30 - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/freebsd11-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/freebsd.png" data-title="FreeBSD 11 - KVM" data-description="
-                            <p>FreeBSD 11 image for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>2fba39bcb81ceb0100295295ebea3445 (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>4096 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/freebsd.png"/>
-                                </div>
-                                <div class="og-title" >FreeBSD 11 - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/freebsd12-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/freebsd.png" data-title="FreeBSD 12 - KVM" data-description="
-                            <p>FreeBSD 12 image for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>487dd803797a5ed0802e5055eeaaac67 (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>4096 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/freebsd.png"/>
-                                </div>
-                                <div class="og-title" >FreeBSD 12 - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://opennebula-marketplace.s3.amazonaws.com/service_gitlab-11.5.4-5.6.0-0.20181220.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/gitlab.png" data-title="Service GitLab CE - KVM" data-description="
-                            <p>Appliance with preinstalled GitLab CE for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,ONEAPP_ADMIN_EMAIL  =&#34;$ONEAPP_ADMIN_EMAIL&#34;,ONEAPP_ADMIN_PASSWORD  =&#34;$ONEAPP_ADMIN_PASSWORD&#34;,ONEAPP_ADMIN_USERNAME  =&#34;$ONEAPP_ADMIN_USERNAME&#34;,ONEAPP_SSL_CERT  =&#34;$ONEAPP_SSL_CERT&#34;,ONEAPP_SSL_CHAIN  =&#34;$ONEAPP_SSL_CHAIN&#34;,ONEAPP_SSL_PRIVKEY  =&#34;$ONEAPP_SSL_PRIVKEY&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-INPUTS_ORDER = &#34;ONEAPP_SSL_CERT,ONEAPP_SSL_PRIVKEY,ONEAPP_SSL_CHAIN,ONEAPP_ADMIN_USERNAME,ONEAPP_ADMIN_EMAIL,ONEAPP_ADMIN_PASSWORD&#34;
-MEMORY = &#34;3096&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-USER_INPUTS = [ ONEAPP_ADMIN_USERNAME  =&#34;O|text|** Site Administrator Login (default: root) (set all or none)&#34;,ONEAPP_ADMIN_PASSWORD  =&#34;O|password|** Site Administrator Password (set all or none)&#34;,ONEAPP_ADMIN_EMAIL  =&#34;O|text|** Site Administrator E-mail (set all or none)&#34;,ONEAPP_SSL_CERT  =&#34;O|text64|SSL certificate&#34;,ONEAPP_SSL_CHAIN  =&#34;O|text64|SSL CA chain&#34;,ONEAPP_SSL_PRIVKEY  =&#34;O|text64|SSL private key&#34;]
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>ac002a586bc71ae24d87ce75e7af60a1 (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>11.5.4-5.6.0-0.20181220</td></tr>
-                            <tr><td>Size:</td><td>4096 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1545306200</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/gitlab.png"/>
-                                </div>
-                                <div class="og-title" >Service GitLab CE - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://opennebula-marketplace.s3.amazonaws.com/service_kubernetes-1.13.4-5.8.0-1.20190315.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/kubernetes.png" data-title="Service Kubernetes - KVM" data-description="
-                            <p>Appliance with preinstalled Kubernetes for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,ONEAPP_K8S_ADDRESS  =&#34;$ONEAPP_K8S_ADDRESS&#34;,ONEAPP_K8S_ADMIN_USERNAME  =&#34;$ONEAPP_K8S_ADMIN_USERNAME&#34;,ONEAPP_K8S_HASH  =&#34;$ONEAPP_K8S_HASH&#34;,ONEAPP_K8S_NODENAME  =&#34;$ONEAPP_K8S_NODENAME&#34;,ONEAPP_K8S_PODS_NETWORK  =&#34;$ONEAPP_K8S_PODS_NETWORK&#34;,ONEAPP_K8S_PORT  =&#34;$ONEAPP_K8S_PORT&#34;,ONEAPP_K8S_TOKEN  =&#34;$ONEAPP_K8S_TOKEN&#34;,REPORT_READY  =&#34;$ONEGATE_ENABLE&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;,TOKEN  =&#34;$ONEGATE_ENABLE&#34;]
-
-CPU = &#34;2&#34;
-VCPU = &#34;2&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-INPUTS_ORDER = &#34;ONEGATE_ENABLE,ONEAPP_K8S_ADDRESS,ONEAPP_K8S_TOKEN,ONEAPP_K8S_HASH,ONEAPP_K8S_NODENAME,ONEAPP_K8S_PORT,ONEAPP_K8S_PODS_NETWORK,ONEAPP_K8S_ADMIN_USERNAME&#34;
-MEMORY = &#34;3096&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-USER_INPUTS = [ ONEGATE_ENABLE  =&#34;M|boolean|Enable OneGate reporting? (req. for multi-node)| |NO&#34;,ONEAPP_K8S_ADDRESS  =&#34;O|text|K8s master node address/network (CIDR subnet)&#34;,ONEAPP_K8S_ADMIN_USERNAME  =&#34;O|text|UI dashboard admin account (default admin-user)&#34;,ONEAPP_K8S_HASH  =&#34;O|text|K8s hash (to join node into the cluster)&#34;,ONEAPP_K8S_NODENAME  =&#34;O|text|K8s master node name&#34;,ONEAPP_K8S_PODS_NETWORK  =&#34;O|text|K8s pods network in CIDR (default 10.244.0.0/16)&#34;,ONEAPP_K8S_PORT  =&#34;O|text|K8s API port (default 6443)&#34;,ONEAPP_K8S_TOKEN  =&#34;O|password|K8s token (to join node into the cluster)&#34;]
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>6531808d8979b34ab621b7f0bda0fdb5 (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>1.13.4-5.8.0-3.20190315</td></tr>
-                            <tr><td>Size:</td><td>4096 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1553883055</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/kubernetes.png"/>
-                                </div>
-                                <div class="og-title" >Service Kubernetes - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://opennebula-marketplace.s3.amazonaws.com/service_wordpress-5.0-5.6.0-0.20181207.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/wordpress.png" data-title="Service WordPress - KVM" data-description="
-                            <p>Appliance with preinstalled WordPress for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,ONEAPP_ADMIN_EMAIL  =&#34;$ONEAPP_ADMIN_EMAIL&#34;,ONEAPP_ADMIN_PASSWORD  =&#34;$ONEAPP_ADMIN_PASSWORD&#34;,ONEAPP_ADMIN_USERNAME  =&#34;$ONEAPP_ADMIN_USERNAME&#34;,ONEAPP_SITE_TITLE  =&#34;$ONEAPP_SITE_TITLE&#34;,ONEAPP_SSL_CERT  =&#34;$ONEAPP_SSL_CERT&#34;,ONEAPP_SSL_CHAIN  =&#34;$ONEAPP_SSL_CHAIN&#34;,ONEAPP_SSL_PRIVKEY  =&#34;$ONEAPP_SSL_PRIVKEY&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-INPUTS_ORDER = &#34;ONEAPP_SSL_CERT,ONEAPP_SSL_PRIVKEY,ONEAPP_SSL_CHAIN,ONEAPP_SITE_TITLE,ONEAPP_ADMIN_USERNAME,ONEAPP_ADMIN_EMAIL,ONEAPP_ADMIN_PASSWORD&#34;
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-USER_INPUTS = [ ONEAPP_ADMIN_EMAIL  =&#34;O|text|** Site Administrator E-mail (set all or none)&#34;,ONEAPP_ADMIN_PASSWORD  =&#34;O|password|** Site Administrator Password (set all or none)&#34;,ONEAPP_ADMIN_USERNAME  =&#34;O|text|** Site Administrator Login (set all or none)&#34;,ONEAPP_SITE_TITLE  =&#34;O|text|** Site Title (set all or none)&#34;,ONEAPP_SSL_CERT  =&#34;O|text64|SSL certificate&#34;,ONEAPP_SSL_CHAIN  =&#34;O|text64|SSL CA chain&#34;,ONEAPP_SSL_PRIVKEY  =&#34;O|text64|SSL private key&#34;]
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>14a58b3de8749c6156b98d4af5d436c4 (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.0-5.6.0-0.20181207</td></tr>
-                            <tr><td>Size:</td><td>4096 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1544177627</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/wordpress.png"/>
-                                </div>
-                                <div class="og-title" >Service WordPress - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="http://opennebula-marketplace.s3.amazonaws.com/ttyvd-context.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/Ttylinux-8.0.png" data-title="Ttylinux - KVM" data-description="
-                            <p>This is a very small image that works with OpenNebula. It&rsquo;s already contextualized. The purpose of this image is to test OpenNebula deployments, without wasting network bandwith thanks to the tiny footprint of this image (23MB).</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;0.1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
 MEMORY = &#34;128&#34;
-LOGO = &#34;images/logos/linux.png&#34;
 </code></pre>
                             <p><table>
                             <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
@@ -818,385 +225,441 @@ LOGO = &#34;images/logos/linux.png&#34;
                             " data-buttontext="">
                             <div class="og-tile">
                                 <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/Ttylinux-8.0.png"/>
+                                    <img src="Ttylinux-8.0.png"/>
                                 </div>
                                 <div class="og-title" >Ttylinux - KVM</div>
                             </div>
 						</a>
 					</li>
 					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/ubuntu1404-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/ubuntu.png" data-title="Ubuntu 14.04 - KVM" data-description="
-                            <p>Ubuntu 14.04 image for KVM hosts</p>
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/empty1024.raw" data-largesrc="ubuntu.png" data-title="Ubuntu 18.04 - EC2" data-description="
+                            <p>Ubuntu 18.04 image ready for the OpenNebula Cloud Bursting on the Amazon EC2.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+EC2 image details:
 
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
+Region: us-east-1
+AMI: ami-055958d686b583944
+Virtualization Type: HVM
+Root Device Type: EBS
+Volume Type: GP2
+
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;hd&#34;
+DRIVER = &#34;raw&#34;
+TYPE = &#34;OS&#34;
 </code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/ubuntu.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>c45fa7a8b03e8cc54e162d87df9371c5 (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>2252 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/ubuntu.png"/>
-                                </div>
-                                <div class="og-title" >Ubuntu 14.04 - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/empty1024.raw" data-largesrc="https://marketplace.opennebula.systems//logos/ubuntu.png" data-title="Ubuntu 16.04 - EC2" data-description="
-                            <p>Ubuntu 16.04 image for Amazon EC2</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;hd&#34;
-DRIVER= &#34;raw&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
 CPU = &#34;0.1&#34;
-MEMORY = &#34;256&#34;
 INPUTS_ORDER = &#34;EC2_INSTANCETYPE,EC2_SECURITYGROUPIDS,EC2_SUBNETID&#34;
-PUBLIC_CLOUD = [ AMI  =&#34;ami-0ec6fa161ad066657&#34;,INSTANCETYPE  =&#34;$EC2_INSTANCETYPE&#34;,SECURITYGROUPIDS  =&#34;$EC2_SECURITYGROUPIDS&#34;,SUBNETID  =&#34;$EC2_SUBNETID&#34;,TYPE  =&#34;ec2&#34;]
-
-SCHED_REQUIREMENTS = &#34;(PUBLIC_CLOUD=YES) &amp; (REGION_NAME=\&#34;us-east-1\&#34;)&#34;
-USER_INPUTS = [ EC2_INSTANCETYPE  =&#34;M|text|EC2 Instance Type&#34;,EC2_SECURITYGROUPIDS  =&#34;M|text|EC2 Security Group IDs&#34;,EC2_SUBNETID  =&#34;M|text|EC2 Subnet ID&#34;]
-
 LOGO = &#34;images/logos/ubuntu.png&#34;
+MEMORY = &#34;256&#34;
+PUBLIC_CLOUD = [
+  AMI = &#34;ami-055958d686b583944&#34;,
+  INSTANCETYPE = &#34;$EC2_INSTANCETYPE&#34;,
+  SECURITYGROUPIDS = &#34;$EC2_SECURITYGROUPIDS&#34;,
+  SUBNETID = &#34;$EC2_SUBNETID&#34;,
+  TYPE = &#34;ec2&#34; ]
+SCHED_REQUIREMENTS = &#34;(PUBLIC_CLOUD=YES) &amp; (REGION_NAME=\&#34;us-east-1\&#34;)&#34;
+USER_INPUTS = [
+  EC2_INSTANCETYPE = &#34;M|text|EC2 Instance Type&#34;,
+  EC2_SECURITYGROUPIDS = &#34;M|text|EC2 Security Group IDs&#34;,
+  EC2_SUBNETID = &#34;M|text|EC2 Subnet ID&#34; ]
 </code></pre>
                             <p><table>
                             <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
                             <tr><td>Checksum:</td><td>0f343b0931126a20f133d67c2b018a3b (md5)</td></tr>
                             <tr><td>Format:</td><td>ami</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190226</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-1.20191126</td></tr>
                             <tr><td>Size:</td><td>0 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
+                            <tr><td>Regtime:</td><td>1574853626</td></tr>
                             </table></p>
                             " data-buttontext="">
                             <div class="og-tile">
                                 <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/ubuntu.png"/>
-                                </div>
-                                <div class="og-title" >Ubuntu 16.04 - EC2</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/ubuntu1604-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/ubuntu.png" data-title="Ubuntu 16.04 - KVM" data-description="
-                            <p>Ubuntu 16.04 image for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/ubuntu.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>46f4290339a242e4dc3ad76d67106087 (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>2252 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/ubuntu.png"/>
-                                </div>
-                                <div class="og-title" >Ubuntu 16.04 - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://opennebula-marketplace.s3.amazonaws.com/ubuntu1604_docker-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/ubuntu.png" data-title="Ubuntu 16.04 with Docker - KVM" data-description="
-                            <p>Ubuntu 16.04 with Docker image for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/ubuntu.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>1fa2641ad1303887f305f3ec51c1f000 (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>2252 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/ubuntu.png"/>
-                                </div>
-                                <div class="og-title" >Ubuntu 16.04 with Docker - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://opennebula-marketplace.s3.amazonaws.com/ubuntu1604_docker-5.8.0-1.20190222.vmdk.gz" data-largesrc="https://marketplace.opennebula.systems//logos/ubuntu.png" data-title="Ubuntu 16.04 with Docker - vCenter" data-description="
-                            <p>Ubuntu 16.04 with Docker image for vCenter hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;sd&#34;
-DRIVER= &#34;vcenter&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>a4e085bbd9037690ce968e6f3294fe64 (md5)</td></tr>
-                            <tr><td>Format:</td><td>vmdk</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>2252 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/ubuntu.png"/>
-                                </div>
-                                <div class="og-title" >Ubuntu 16.04 with Docker - vCenter</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/empty1024.raw" data-largesrc="https://marketplace.opennebula.systems//logos/ubuntu.png" data-title="Ubuntu 18.04 - EC2" data-description="
-                            <p>Ubuntu 18.04 image for Amazon EC2</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;hd&#34;
-DRIVER= &#34;raw&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;0.1&#34;
-MEMORY = &#34;256&#34;
-INPUTS_ORDER = &#34;EC2_INSTANCETYPE,EC2_SECURITYGROUPIDS,EC2_SUBNETID&#34;
-PUBLIC_CLOUD = [ AMI  =&#34;ami-004e183f9079ffbf0&#34;,INSTANCETYPE  =&#34;$EC2_INSTANCETYPE&#34;,SECURITYGROUPIDS  =&#34;$EC2_SECURITYGROUPIDS&#34;,SUBNETID  =&#34;$EC2_SUBNETID&#34;,TYPE  =&#34;ec2&#34;]
-
-SCHED_REQUIREMENTS = &#34;(PUBLIC_CLOUD=YES) &amp; (REGION_NAME=\&#34;us-east-1\&#34;)&#34;
-USER_INPUTS = [ EC2_INSTANCETYPE  =&#34;M|text|EC2 Instance Type&#34;,EC2_SECURITYGROUPIDS  =&#34;M|text|EC2 Security Group IDs&#34;,EC2_SUBNETID  =&#34;M|text|EC2 Subnet ID&#34;]
-
-LOGO = &#34;images/logos/ubuntu.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>0f343b0931126a20f133d67c2b018a3b (md5)</td></tr>
-                            <tr><td>Format:</td><td>ami</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190226</td></tr>
-                            <tr><td>Size:</td><td>0 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/ubuntu.png"/>
+                                    <img src="ubuntu.png"/>
                                 </div>
                                 <div class="og-title" >Ubuntu 18.04 - EC2</div>
                             </div>
 						</a>
 					</li>
 					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/ubuntu1804-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/ubuntu.png" data-title="Ubuntu 18.04 - KVM" data-description="
-                            <p>Ubuntu 18.04 image for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/alpine311-5.10.0-1.20200108.qcow2" data-largesrc="alpine.png" data-title="Alpine Linux 3.11" data-description="
+                            <p>Alpine Linux 3.11 image ready for your OpenNebula deployment.
+This image is based of the Alpine Linux 3.11 cloud image with the OpenNebula contextualization package.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
 </code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
 CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/ubuntu.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>f5c9cb786bd56cc7561b75aaf24103a5 (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>2252 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/ubuntu.png"/>
-                                </div>
-                                <div class="og-title" >Ubuntu 18.04 - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/ubuntu1810-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/ubuntu.png" data-title="Ubuntu 18.10 - KVM" data-description="
-                            <p>Ubuntu 18.10 image for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/ubuntu.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>095e93d9490b5de2d17ea9087b63c74f (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>2252 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/ubuntu.png"/>
-                                </div>
-                                <div class="og-title" >Ubuntu 18.10 - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/ubuntu1904-5.8.0-1.20190503.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/ubuntu.png" data-title="Ubuntu 19.04 - KVM" data-description="
-                            <p>Ubuntu 19.04 image for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/ubuntu.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>85d661a149352eaf5c948a59b24c9b37 (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190503</td></tr>
-                            <tr><td>Size:</td><td>2252 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1557131622</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/ubuntu.png"/>
-                                </div>
-                                <div class="og-title" >Ubuntu 19.04 - KVM</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/docker_machine_ubuntu-14.04.qcow2c" data-largesrc="https://marketplace.opennebula.systems//logos/default.png" data-title="Ubuntu for Docker Machine" data-description="
-                            <p>Ubuntu 14.04 LTS with preinstalled packages in order to work with Docker Machine</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/ubuntu.png&#34;
-</code></pre>
-                            <p><table>
-                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>3493d7cbaa20143b2ee3ffc3ece73077 (md5)</td></tr>
-                            <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>0.6.0-2</td></tr>
-                            <tr><td>Size:</td><td>10240 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1456159688</td></tr>
-                            </table></p>
-                            " data-buttontext="">
-                            <div class="og-tile">
-                                <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/default.png"/>
-                                </div>
-                                <div class="og-title" >Ubuntu for Docker Machine</div>
-                            </div>
-						</a>
-					</li>
-					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/alpine-vrouter-5.0.2-0.20181121.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/router.png" data-title="Vrouter Alpine - KVM" data-description="
-                            <p>Virtual router appliance to be used with OpenNebula 5.x. Based on Alpine linux.</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
-</code></pre>
-                            <h4>vm template:</h4><pre><code>CPU = &#34;1.0&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/linux.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
 MEMORY = &#34;128&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>eced462478bf7f1412f5847373e75cf1 (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-1.20200108</td></tr>
+                            <tr><td>Size:</td><td>256 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1578593723</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="alpine.png"/>
+                                </div>
+                                <div class="og-title" >Alpine Linux 3.11</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/ubuntu1904-5.10.0-1.20191115.qcow2" data-largesrc="ubuntu.png" data-title="Ubuntu 19.04" data-description="
+                            <p>This image has the OpenNebula contextualization package preinstalled.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/ubuntu.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>0e09e210ce560945530952bde46ac212 (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191115</td></tr>
+                            <tr><td>Size:</td><td>2252 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859862</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="ubuntu.png"/>
+                                </div>
+                                <div class="og-title" >Ubuntu 19.04</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/fedora29-5.10.0-1.20191125.qcow2" data-largesrc="fedora.png" data-title="Fedora 29" data-description="
+                            <p>Fedora 29 image ready for your OpenNebula deployment.
+This image is based off a Fedora 29 cloud image with the OpenNebula contextualization package.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/fedora.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>8b7fe4af5e5ade875c91db198e14ad4f (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191125</td></tr>
+                            <tr><td>Size:</td><td>4096 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574855313</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="fedora.png"/>
+                                </div>
+                                <div class="og-title" >Fedora 29</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/devuan2-5.10.0-1.20191117.qcow2" data-largesrc="devuan.png" data-title="Devuan 2" data-description="
+                            <p>This image has the OpenNebula contextualization package preinstalled.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/linux.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>7efa6e23b48b13821ebc9d2b63260235 (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191117</td></tr>
+                            <tr><td>Size:</td><td>20479 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859862</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="devuan.png"/>
+                                </div>
+                                <div class="og-title" >Devuan 2</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/opensuse_tumbleweed-5.10.0-1.20191117.qcow2" data-largesrc="opensuse.png" data-title="openSUSE Tumbleweed" data-description="
+                            <p>This image has the OpenNebula contextualization package preinstalled.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/linux.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>5401c3f736d34d3e041d9f504c27c08b (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191117</td></tr>
+                            <tr><td>Size:</td><td>846 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859862</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="opensuse.png"/>
+                                </div>
+                                <div class="og-title" >openSUSE Tumbleweed</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/empty1024.raw" data-largesrc="centos-5.5.png" data-title="CentOS 7 - EC2" data-description="
+                            <p>CentOS 7 image ready for the OpenNebula Cloud Bursting on the Amazon EC2.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+EC2 image details:
+
+Region: us-east-1
+AMI: ami-0492e1265802aa66e
+Virtualization Type: HVM
+Root Device Type: EBS
+Volume Type: GP2
+
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;hd&#34;
+DRIVER = &#34;raw&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;0.1&#34;
+INPUTS_ORDER = &#34;EC2_INSTANCETYPE,EC2_SECURITYGROUPIDS,EC2_SUBNETID&#34;
+LOGO = &#34;images/logos/centos.png&#34;
+MEMORY = &#34;256&#34;
+PUBLIC_CLOUD = [
+  AMI = &#34;ami-0492e1265802aa66e&#34;,
+  INSTANCETYPE = &#34;$EC2_INSTANCETYPE&#34;,
+  SECURITYGROUPIDS = &#34;$EC2_SECURITYGROUPIDS&#34;,
+  SUBNETID = &#34;$EC2_SUBNETID&#34;,
+  TYPE = &#34;ec2&#34; ]
+SCHED_REQUIREMENTS = &#34;(PUBLIC_CLOUD=YES) &amp; (REGION_NAME=\&#34;us-east-1\&#34;)&#34;
+USER_INPUTS = [
+  EC2_INSTANCETYPE = &#34;M|text|EC2 Instance Type&#34;,
+  EC2_SECURITYGROUPIDS = &#34;M|text|EC2 Security Group IDs&#34;,
+  EC2_SUBNETID = &#34;M|text|EC2 Subnet ID&#34; ]
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>0f343b0931126a20f133d67c2b018a3b (md5)</td></tr>
+                            <tr><td>Format:</td><td>ami</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-1.20191126</td></tr>
+                            <tr><td>Size:</td><td>0 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574853626</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="centos-5.5.png"/>
+                                </div>
+                                <div class="og-title" >CentOS 7 - EC2</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/alpine39-5.10.0-1.20191115.qcow2" data-largesrc="alpine.png" data-title="Alpine Linux 3.9" data-description="
+                            <p>Alpine Linux 3.9 image ready for your OpenNebula deployment.
+This image is based of the Alpine Linux 3.9 cloud image with the OpenNebula contextualization package.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/linux.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;128&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>1fb66e3fa8d5139a04380d84f772b1bd (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191115</td></tr>
+                            <tr><td>Size:</td><td>256 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859288</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="alpine.png"/>
+                                </div>
+                                <div class="og-title" >Alpine Linux 3.9</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/debian9-5.10.0-1.20191115.qcow2" data-largesrc="debian.png" data-title="Debian 9" data-description="
+                            <p>This image has the OpenNebula contextualization package preinstalled.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/debian.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>96e72675cbefebe8107685f0b988c02a (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191115</td></tr>
+                            <tr><td>Size:</td><td>2048 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859862</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="debian.png"/>
+                                </div>
+                                <div class="og-title" >Debian 9</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/alpine-vrouter-5.0.2-0.20181121.qcow2" data-largesrc="router.png" data-title="Vrouter Alpine - KVM" data-description="
+                            <p>Supports keepalived for HA.</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;yes&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1.0&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+MEMORY = &#34;128&#34;
+NIC_DEFAULT = [
+  MODEL = &#34;virtio&#34; ]
 VCPU = &#34;1&#34;
-CONTEXT = [ NETWORK  =&#34;yes&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-NIC_DEFAULT = [ MODEL  =&#34;virtio&#34;]
-
 VROUTER = &#34;yes&#34;
 </code></pre>
                             <p><table>
@@ -1210,18 +673,188 @@ VROUTER = &#34;yes&#34;
                             " data-buttontext="">
                             <div class="og-tile">
                                 <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/router.png"/>
+                                    <img src="router.png"/>
                                 </div>
                                 <div class="og-title" >Vrouter Alpine - KVM</div>
                             </div>
 						</a>
 					</li>
 					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/alpine-vrouter-5.0.2-0.20181121.vmdk.gz" data-largesrc="https://marketplace.opennebula.systems//logos/router.png" data-title="Vrouter Alpine - vCenter" data-description="
-                            <p>Virtual router appliance to be used with OpenNebula 5.x. Based on Alpine linux.</p>
-
-                            <h4>image template:</h4> <pre><code>TYPE= &#34;OS&#34;
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/centos7-5.8.0-1.20190222.qcow2" data-largesrc="centos-5.5.png" data-title="CentOS 7 - KVM" data-description="
+                            <p>A CentOS 7 image ready for your OpenNebula deployment in KVM hosts.
+This image is based off a CentOS 7 cloud image with the OpenNebula contextualization package.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+LOGO = &#34;images/logos/centos.png&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>dbc81ae029a17e12e51c0aac3cc5ac4d (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
+                            <tr><td>Size:</td><td>8192 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1551174013</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="centos-5.5.png"/>
+                                </div>
+                                <div class="og-title" >CentOS 7 - KVM</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/ubuntu1910-5.10.0-1.20200102.qcow2" data-largesrc="ubuntu.png" data-title="Ubuntu 19.10" data-description="
+                            <p>This image has the OpenNebula contextualization package preinstalled.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/ubuntu.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>3043d27dcd58895e152ba897ab5a3d44 (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-1.20200102</td></tr>
+                            <tr><td>Size:</td><td>2252 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1578052540</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="ubuntu.png"/>
+                                </div>
+                                <div class="og-title" >Ubuntu 19.10</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/alpine310-5.10.0-1.20191115.qcow2" data-largesrc="alpine.png" data-title="Alpine Linux 3.10" data-description="
+                            <p>Alpine Linux 3.10 image ready for your OpenNebula deployment.
+This image is based of the Alpine Linux 3.10 cloud image with the OpenNebula contextualization package.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/linux.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;128&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>284372af7ec5c468a2fc9c5d015ea0fa (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191115</td></tr>
+                            <tr><td>Size:</td><td>256 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859288</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="alpine.png"/>
+                                </div>
+                                <div class="og-title" >Alpine Linux 3.10</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/amazon2-5.10.0-1.20191117.qcow2" data-largesrc="amazon.png" data-title="Amazon Linux 2" data-description="
+                            <p>Amazon Linux 2 image ready for the OpenNebula deployment with contextualization package installed. The use of this software is governed by the terms of the AWS Customer Agreement (https://aws.amazon.com/agreement/) or other agreement with AWS governing the use of AWS services.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/linux.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>236e02407e8b3379900aa4083bb51ac0 (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191117</td></tr>
+                            <tr><td>Size:</td><td>25600 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859016</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="amazon.png"/>
+                                </div>
+                                <div class="og-title" >Amazon Linux 2</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/alpine-vrouter-5.0.2-0.20181121.vmdk.gz" data-largesrc="router.png" data-title="Vrouter Alpine - vCenter" data-description="
+                            <p>Supports keepalived for HA.</p>
+                            <h4>image template:</h4> <pre><code>TYPE = &#34;OS&#34;
 </code></pre>
                             
                             <p><table>
@@ -1235,81 +868,1157 @@ VROUTER = &#34;yes&#34;
                             " data-buttontext="">
                             <div class="og-tile">
                                 <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/router.png"/>
+                                    <img src="router.png"/>
                                 </div>
                                 <div class="og-title" >Vrouter Alpine - vCenter</div>
                             </div>
 						</a>
 					</li>
 					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/opensuse15-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/opensuse.png" data-title="openSUSE 15 - KVM" data-description="
-                            <p>openSUSE 15 image for KVM hosts</p>
+          <li>
+            <a  href="https://opennebula-marketplace.s3.amazonaws.com/service_gitlab-11.5.4-5.6.0-0.20181220.qcow2" data-largesrc="gitlab.png" data-title="Service GitLab CE - KVM" data-description="
+                            <p>Appliance with preinstalled GitLab CE. Run,  get GitLab initial web page for
+setting up the default account password (login: root), or use contextualization
+variables to automate the bootstrap (username, password, and email). Information
+about credentials, connections, and site URL is stored in the text file
+/etc/one-appliance/config on your running appliance.
+See the dedicated documentation.
+Notes:
 
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
+Minimal password length is 8 characters, shorter breaks bootstrap
+Automatic HTTP to HTTPS redirection is placed when SSL is enabled - you
+can disable this by setting ONEAPP_HTTP_REDIRECT to no.
+
+Initial configuration can be customized via parameters:
+
+ONEAPP_SITE_HOSTNAME - Fully qualified domain name or IP
+ONEAPP_SITE_RELATIVE_URL - Relative URL to the service (default: /)
+ONEAPP_HTTP_REDIRECT - Automatic HTTP to HTTPS redirection (default: yes)
+ONEAPP_SSL_CERT - SSL certificate
+ONEAPP_SSL_PRIVKEY - SSL private key
+ONEAPP_SSL_CHAIN - SSL CA chain
+
+And, optionally bootstrapped with (ALL MUST BE SET):
+
+ONEAPP_ADMIN_USERNAME - Site Administrator Login (default: root)
+ONEAPP_ADMIN_PASSWORD - Site Administrator Password
+ONEAPP_ADMIN_EMAIL - Site Administrator E-mail
+
+For more information about configuration follow the GitLab
+documentation.
+WARNING: GitLab has few reserved words
+which cannot be used, e.g.: ONEAPP_ADMIN_USERNAME cannot be admin
+WARNING: Do not use localhost or loopback for ONEAPP_SITE_HOSTNAME, it
+breaks the service bootstrap. It&#39;s necessary to provide a routable name
+or IP.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
 </code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  ONEAPP_ADMIN_EMAIL = &#34;$ONEAPP_ADMIN_EMAIL&#34;,
+  ONEAPP_ADMIN_PASSWORD = &#34;$ONEAPP_ADMIN_PASSWORD&#34;,
+  ONEAPP_ADMIN_USERNAME = &#34;$ONEAPP_ADMIN_USERNAME&#34;,
+  ONEAPP_SSL_CERT = &#34;$ONEAPP_SSL_CERT&#34;,
+  ONEAPP_SSL_CHAIN = &#34;$ONEAPP_SSL_CHAIN&#34;,
+  ONEAPP_SSL_PRIVKEY = &#34;$ONEAPP_SSL_PRIVKEY&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
 CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
-MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/linux.png&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INPUTS_ORDER = &#34;ONEAPP_SSL_CERT,ONEAPP_SSL_PRIVKEY,ONEAPP_SSL_CHAIN,ONEAPP_ADMIN_USERNAME,ONEAPP_ADMIN_EMAIL,ONEAPP_ADMIN_PASSWORD&#34;
+MEMORY = &#34;3096&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+USER_INPUTS = [
+  ONEAPP_ADMIN_EMAIL = &#34;O|text|** Site Administrator E-mail (set all or none)&#34;,
+  ONEAPP_ADMIN_PASSWORD = &#34;O|password|** Site Administrator Password (set all or none)&#34;,
+  ONEAPP_ADMIN_USERNAME = &#34;O|text|** Site Administrator Login (default: root) (set all or none)&#34;,
+  ONEAPP_SSL_CERT = &#34;O|text64|SSL certificate&#34;,
+  ONEAPP_SSL_CHAIN = &#34;O|text64|SSL CA chain&#34;,
+  ONEAPP_SSL_PRIVKEY = &#34;O|text64|SSL private key&#34; ]
 </code></pre>
                             <p><table>
                             <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>130d2bc10d36471fa6615b93d05dfc81 (md5)</td></tr>
+                            <tr><td>Checksum:</td><td>ac002a586bc71ae24d87ce75e7af60a1 (md5)</td></tr>
                             <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>10240 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
+                            <tr><td>Version:</td><td>11.5.4-5.6.0-0.20181220</td></tr>
+                            <tr><td>Size:</td><td>4096 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1545306200</td></tr>
                             </table></p>
                             " data-buttontext="">
                             <div class="og-tile">
                                 <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/opensuse.png"/>
+                                    <img src="gitlab.png"/>
                                 </div>
-                                <div class="og-title" >openSUSE 15 - KVM</div>
+                                <div class="og-title" >Service GitLab CE - KVM</div>
                             </div>
 						</a>
 					</li>
 					
-					<li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/opensuse42-5.8.0-1.20190222.qcow2" data-largesrc="https://marketplace.opennebula.systems//logos/opensuse.png" data-title="openSUSE 42 - KVM" data-description="
-                            <p>openSUSE 42 image for KVM hosts</p>
-
-                            <h4>image template:</h4> <pre><code>DEV_PREFIX= &#34;vd&#34;
-DRIVER= &#34;qcow2&#34;
-TYPE= &#34;OS&#34;
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/ubuntumin1804-5.10.0-1.20191115.qcow2" data-largesrc="ubuntu.png" data-title="Ubuntu Minimal 18.04 - KVM" data-description="
+                            <p>This image has the OpenNebula contextualization package preinstalled.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
 </code></pre>
-                            <h4>vm template:</h4><pre><code>CONTEXT = [ NETWORK  =&#34;YES&#34;,SSH_PUBLIC_KEY  =&#34;$USER[SSH_PUBLIC_KEY]&#34;]
-
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
 CPU = &#34;1&#34;
-GRAPHICS = [ LISTEN  =&#34;0.0.0.0&#34;,TYPE  =&#34;vnc&#34;]
-
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+LOGO = &#34;images/logos/ubuntu.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
 MEMORY = &#34;768&#34;
-OS = [ ARCH  =&#34;x86_64&#34;]
-
-LOGO = &#34;images/logos/linux.png&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
 </code></pre>
                             <p><table>
                             <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
-                            <tr><td>Checksum:</td><td>5818b6c1d1111a327e042f0ff7ecff37 (md5)</td></tr>
+                            <tr><td>Checksum:</td><td>07395efc04aa4abffdfd4e1eb7fe5045 (md5)</td></tr>
                             <tr><td>Format:</td><td>qcow2</td></tr>
-                            <tr><td>Version:</td><td>5.8.0-1.20190222</td></tr>
-                            <tr><td>Size:</td><td>10240 MB</td></tr>
-                            <tr><td>Regtime:</td><td>1551174013</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191115</td></tr>
+                            <tr><td>Size:</td><td>2252 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859862</td></tr>
                             </table></p>
                             " data-buttontext="">
                             <div class="og-tile">
                                 <div class="og-thumb">
-                                    <img src="https://marketplace.opennebula.systems//logos/opensuse.png"/>
+                                    <img src="ubuntu.png"/>
                                 </div>
-                                <div class="og-title" >openSUSE 42 - KVM</div>
+                                <div class="og-title" >Ubuntu Minimal 18.04 - KVM</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/fedora31-5.10.0-1.20191125.qcow2" data-largesrc="fedora.png" data-title="Fedora 31" data-description="
+                            <p>Fedora 31 image ready for your OpenNebula deployment.
+This image is based off a Fedora 31 cloud image with the OpenNebula contextualization package.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/fedora.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>7ff827164c807a62b6d46a5ce360a490 (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191125</td></tr>
+                            <tr><td>Size:</td><td>4096 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574855313</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="fedora.png"/>
+                                </div>
+                                <div class="og-title" >Fedora 31</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/one-context-5.10.0-1.iso" data-largesrc="" data-title="Contextualization Packages" data-description="
+                            <p>CD-ROM image with contextualization packages for Linux and Windows.</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;hd&#34;
+DRIVER = &#34;raw&#34;
+TYPE = &#34;CDROM&#34;
+</code></pre>
+                            
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>57ec72dcb83910207636b422cdf41df0 (md5)</td></tr>
+                            <tr><td>Format:</td><td>raw</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-1</td></tr>
+                            <tr><td>Size:</td><td>0 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574863426</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    
+                                </div>
+                                <div class="og-title" >Contextualization Packages</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/freebsd12-5.10.0-1.20191115.qcow2" data-largesrc="freebsd.png" data-title="FreeBSD 12 - KVM" data-description="
+                            <p>This image has the OpenNebula contextualization package preinstalled.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>2ebe474864bb5edad1f1cddd2dd584df (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-1.20191115</td></tr>
+                            <tr><td>Size:</td><td>4096 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859862</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="freebsd.png"/>
+                                </div>
+                                <div class="og-title" >FreeBSD 12 - KVM</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/debian8-5.10.0-1.20191115.qcow2" data-largesrc="debian.png" data-title="Debian 8" data-description="
+                            <p>This image has the OpenNebula contextualization package preinstalled.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/debian.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>8991464ddb397644fad11014a372f35d (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191115</td></tr>
+                            <tr><td>Size:</td><td>2048 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859774</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="debian.png"/>
+                                </div>
+                                <div class="og-title" >Debian 8</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://opennebula-marketplace.s3.amazonaws.com/service_wordpress-5.1.3-5.10.0-1.20191122.qcow2" data-largesrc="wordpress.png" data-title="Service WordPress - KVM" data-description="
+                            <p>Appliance with preinstalled WordPress. Run, get WordPress setup web wizard
+and manually bootstrap the service, or use contextualization variables
+to automate the bootstrap. For more information about credentials,
+connections, and site URL check /etc/appliance/config on your running
+appliance. See the dedicated documentation.
+Initial configuration can be customized via parameters:
+
+ONEAPP_SITE_HOSTNAME - Fully qualified domain name or IP
+ONEAPP_SSL_CERT - SSL certificate
+ONEAPP_SSL_PRIVKEY - SSL private key
+ONEAPP_SSL_CHAIN - SSL CA chain
+
+And, optionally bootstrapped with (ALL MUST BE SET):
+
+ONEAPP_SITE_TITLE - Site Title
+ONEAPP_ADMIN_USERNAME - Site Administrator Login
+ONEAPP_ADMIN_PASSWORD -  Site Administrator Password
+ONEAPP_ADMIN_EMAIL - Site Administrator E-mail
+
+WARNING: Do not use localhost or loopback for ONEAPP_SITE_HOSTNAME, it
+breaks the WordPress bootstrap. It&#39;s necessary to provide routable name
+or IP.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  ONEAPP_ADMIN_EMAIL = &#34;$ONEAPP_ADMIN_EMAIL&#34;,
+  ONEAPP_ADMIN_PASSWORD = &#34;$ONEAPP_ADMIN_PASSWORD&#34;,
+  ONEAPP_ADMIN_USERNAME = &#34;$ONEAPP_ADMIN_USERNAME&#34;,
+  ONEAPP_SITE_TITLE = &#34;$ONEAPP_SITE_TITLE&#34;,
+  ONEAPP_SSL_CERT = &#34;$ONEAPP_SSL_CERT&#34;,
+  ONEAPP_SSL_CHAIN = &#34;$ONEAPP_SSL_CHAIN&#34;,
+  ONEAPP_SSL_PRIVKEY = &#34;$ONEAPP_SSL_PRIVKEY&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INPUTS_ORDER = &#34;ONEAPP_SSL_CERT,ONEAPP_SSL_PRIVKEY,ONEAPP_SSL_CHAIN,ONEAPP_SITE_TITLE,ONEAPP_ADMIN_USERNAME,ONEAPP_ADMIN_EMAIL,ONEAPP_ADMIN_PASSWORD&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+USER_INPUTS = [
+  ONEAPP_ADMIN_EMAIL = &#34;O|text|** Site Administrator E-mail (set all or none)&#34;,
+  ONEAPP_ADMIN_PASSWORD = &#34;O|password|** Site Administrator Password (set all or none)&#34;,
+  ONEAPP_ADMIN_USERNAME = &#34;O|text|** Site Administrator Login (set all or none)&#34;,
+  ONEAPP_SITE_TITLE = &#34;O|text|** Site Title (set all or none)&#34;,
+  ONEAPP_SSL_CERT = &#34;O|text64|SSL certificate&#34;,
+  ONEAPP_SSL_CHAIN = &#34;O|text64|SSL CA chain&#34;,
+  ONEAPP_SSL_PRIVKEY = &#34;O|text64|SSL private key&#34; ]
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>093fbfa8b549f01e2335a7754860f6d5 (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.1.3-5.10.0-1.20191122</td></tr>
+                            <tr><td>Size:</td><td>4096 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859862</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="wordpress.png"/>
+                                </div>
+                                <div class="og-title" >Service WordPress - KVM</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/debian10-5.10.0-1.20191117.qcow2" data-largesrc="debian.png" data-title="Debian 10" data-description="
+                            <p>This image has the OpenNebula contextualization package preinstalled.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/debian.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>4fd756f1c50cc12192e9da661011797f (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191117</td></tr>
+                            <tr><td>Size:</td><td>2048 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859862</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="debian.png"/>
+                                </div>
+                                <div class="og-title" >Debian 10</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/centos6-5.10.0-1.20191117.qcow2" data-largesrc="centos-5.5.png" data-title="CentOS 6" data-description="
+                            <p>A CentOS 6 image ready for your OpenNebula deployment.
+This image is based off a CentOS 6 minimal install with the contextualization package.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/centos.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>b371186a92fa70cf76199f75eee0d5f9 (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191117</td></tr>
+                            <tr><td>Size:</td><td>8192 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574858556</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="centos-5.5.png"/>
+                                </div>
+                                <div class="og-title" >CentOS 6</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/ubuntumin1904-5.10.0-1.20191115.qcow2" data-largesrc="ubuntu.png" data-title="Ubuntu Minimal 19.04 - KVM" data-description="
+                            <p>This image has the OpenNebula contextualization package preinstalled.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+LOGO = &#34;images/logos/ubuntu.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>80ea07534c372d07c6d9f974d3786438 (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191115</td></tr>
+                            <tr><td>Size:</td><td>2252 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859862</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="ubuntu.png"/>
+                                </div>
+                                <div class="og-title" >Ubuntu Minimal 19.04 - KVM</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/centos7-5.10.0-1.20191117.qcow2" data-largesrc="centos-5.5.png" data-title="CentOS 7" data-description="
+                            <p>A CentOS 7 image ready for your OpenNebula deployment.
+This image is based off a CentOS 7 cloud image with the OpenNebula contextualization package.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/centos.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>e1baa0b43ab17bd798c2fdc0ece38fa3 (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191117</td></tr>
+                            <tr><td>Size:</td><td>8192 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574858697</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="centos-5.5.png"/>
+                                </div>
+                                <div class="og-title" >CentOS 7</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://opennebula-marketplace.s3.amazonaws.com/ubuntu1604_docker-5.10.0-1.20191118.qcow2" data-largesrc="ubuntu.png" data-title="Ubuntu 16.04 with Docker" data-description="
+                            <p>This image has the OpenNebula contextualization package and Docker-CE preinstalled.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/ubuntu.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>d7e105f9fd3e5d75a836cab8220552c8 (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191118</td></tr>
+                            <tr><td>Size:</td><td>2252 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859862</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="ubuntu.png"/>
+                                </div>
+                                <div class="og-title" >Ubuntu 16.04 with Docker</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/ubuntu1404-5.10.0-1.20191115.qcow2" data-largesrc="ubuntu.png" data-title="Ubuntu 14.04" data-description="
+                            <p>This image has the OpenNebula contextualization package preinstalled.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/ubuntu.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>9a7572d4f8a3fd73d614df6ae0e92fd9 (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191115</td></tr>
+                            <tr><td>Size:</td><td>2252 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859862</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="ubuntu.png"/>
+                                </div>
+                                <div class="og-title" >Ubuntu 14.04</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/ubuntumin1910-5.10.0-1.20191115.qcow2" data-largesrc="ubuntu.png" data-title="Ubuntu Minimal 19.10 - KVM" data-description="
+                            <p>This image has the OpenNebula contextualization package preinstalled.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+LOGO = &#34;images/logos/ubuntu.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>81345758ea98087c2c1bc15b7d90b6c7 (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191115</td></tr>
+                            <tr><td>Size:</td><td>2252 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859862</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="ubuntu.png"/>
+                                </div>
+                                <div class="og-title" >Ubuntu Minimal 19.10 - KVM</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/freebsd11-5.10.0-1.20191115.qcow2" data-largesrc="freebsd.png" data-title="FreeBSD 11 - KVM" data-description="
+                            <p>This image has the OpenNebula contextualization package preinstalled.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>c1215da798d43cd517a4366f004eb87b (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-1.20191115</td></tr>
+                            <tr><td>Size:</td><td>4096 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859862</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="freebsd.png"/>
+                                </div>
+                                <div class="og-title" >FreeBSD 11 - KVM</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/fedora30-5.10.0-1.20191125.qcow2" data-largesrc="fedora.png" data-title="Fedora 30" data-description="
+                            <p>Fedora 30 image ready for your OpenNebula deployment.
+This image is based off a Fedora 30 cloud image with the OpenNebula contextualization package.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/fedora.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>e4ca9700046478118c3b5c2378414e8c (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191125</td></tr>
+                            <tr><td>Size:</td><td>4096 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574855313</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="fedora.png"/>
+                                </div>
+                                <div class="og-title" >Fedora 30</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/opensuse15-5.10.0-1.20191117.qcow2" data-largesrc="opensuse.png" data-title="openSUSE 15" data-description="
+                            <p>This image has the OpenNebula contextualization package preinstalled.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/linux.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>a5049fc5553801a306573b1b0aea1a04 (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191117</td></tr>
+                            <tr><td>Size:</td><td>10240 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859862</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="opensuse.png"/>
+                                </div>
+                                <div class="og-title" >openSUSE 15</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/debian11-5.10.0-1.20191115.qcow2" data-largesrc="debian.png" data-title="Debian Testing" data-description="
+                            <p>This image has the OpenNebula contextualization package preinstalled. This image is BETA.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/debian.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>7a8a250577dfe0127757fe07f64ec96b (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191115</td></tr>
+                            <tr><td>Size:</td><td>2048 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859862</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="debian.png"/>
+                                </div>
+                                <div class="og-title" >Debian Testing</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/empty1024.raw" data-largesrc="debian.png" data-title="Debian 9 - EC2" data-description="
+                            <p>Debian 9 image ready for the OpenNebula Cloud Bursting on the Amazon EC2.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+EC2 image details:
+
+Region: us-east-1
+AMI: ami-0fa19da45bca576c5
+Virtualization Type: HVM
+Root Device Type: EBS
+Volume Type: GP2
+
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;hd&#34;
+DRIVER = &#34;raw&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;0.1&#34;
+INPUTS_ORDER = &#34;EC2_INSTANCETYPE,EC2_SECURITYGROUPIDS,EC2_SUBNETID&#34;
+LOGO = &#34;images/logos/debian.png&#34;
+MEMORY = &#34;256&#34;
+PUBLIC_CLOUD = [
+  AMI = &#34;ami-0fa19da45bca576c5&#34;,
+  INSTANCETYPE = &#34;$EC2_INSTANCETYPE&#34;,
+  SECURITYGROUPIDS = &#34;$EC2_SECURITYGROUPIDS&#34;,
+  SUBNETID = &#34;$EC2_SUBNETID&#34;,
+  TYPE = &#34;ec2&#34; ]
+SCHED_REQUIREMENTS = &#34;(PUBLIC_CLOUD=YES) &amp; (REGION_NAME=\&#34;us-east-1\&#34;)&#34;
+USER_INPUTS = [
+  EC2_INSTANCETYPE = &#34;M|text|EC2 Instance Type&#34;,
+  EC2_SECURITYGROUPIDS = &#34;M|text|EC2 Security Group IDs&#34;,
+  EC2_SUBNETID = &#34;M|text|EC2 Subnet ID&#34; ]
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>0f343b0931126a20f133d67c2b018a3b (md5)</td></tr>
+                            <tr><td>Format:</td><td>ami</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-1.20191126</td></tr>
+                            <tr><td>Size:</td><td>0 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574853626</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="debian.png"/>
+                                </div>
+                                <div class="og-title" >Debian 9 - EC2</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/virtio-win-0.1.171.iso" data-largesrc="" data-title="Windows VirtIO Drivers" data-description="
+                            <p>CD-ROM image with stable VirtIO drivers for Windows.</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;hd&#34;
+DRIVER = &#34;raw&#34;
+TYPE = &#34;CDROM&#34;
+</code></pre>
+                            
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>c55e2815bc7090f077cf82aed5c90423 (md5)</td></tr>
+                            <tr><td>Format:</td><td>raw</td></tr>
+                            <tr><td>Version:</td><td>0.1.171</td></tr>
+                            <tr><td>Size:</td><td>354 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574863426</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    
+                                </div>
+                                <div class="og-title" >Windows VirtIO Drivers</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/ubuntu1804-5.10.0-1.20191115.qcow2" data-largesrc="ubuntu.png" data-title="Ubuntu 18.04" data-description="
+                            <p>This image has the OpenNebula contextualization package preinstalled.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/ubuntu.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>2857941701efa88f583f225214edcfe0 (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191115</td></tr>
+                            <tr><td>Size:</td><td>2252 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859862</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="ubuntu.png"/>
+                                </div>
+                                <div class="og-title" >Ubuntu 18.04</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://opennebula-marketplace.s3.amazonaws.com/service_kubernetes-1.15.6-5.10.0-1.20191122.qcow2" data-largesrc="kubernetes.png" data-title="Service Kubernetes - KVM" data-description="
+                            <p>Appliance with preinstalled Kubernetes to work as a single-node cluster,
+manualy managed multi-node cluster, or automatically managed multi-node
+cluster as OpenNebula OneFlow Service. Preconfigured with Canal CNI
+networking (Calico and Flannel). For more information about credentials,
+connections, and dashboard URL check /etc/appliance/config on your
+running appliance. See the dedicated documentation.
+Initial configuration can be customized via parameters:
+
+ONEAPP_K8S_ADDRESS - K8s master node address/network (CIDR subnet)
+ONEAPP_K8S_TOKEN - K8s token (to join node into the cluster)
+ONEAPP_K8S_HASH - K8s hash (to join node into the cluster)
+ONEAPP_K8S_NODENAME - K8s master node name
+ONEAPP_K8S_PORT - K8s API port (default 6443)
+ONEAPP_K8S_PODS_NETWORK - K8s pods network in CIDR (default 10.244.0.0/16)
+ONEAPP_K8S_ADMIN_USERNAME - UI dashboard admin account (default admin-user)
+
+WARNING: For multi-node deployment managed by OneFlow, it&#39;s necessary
+to set ONEGATE_ENABLE=&#39;YES&#39; to enable an exchange of the connection
+parameters among the nodes via OneGate, and report when the nodes are
+ready to use.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  ONEAPP_K8S_ADDRESS = &#34;$ONEAPP_K8S_ADDRESS&#34;,
+  ONEAPP_K8S_ADMIN_USERNAME = &#34;$ONEAPP_K8S_ADMIN_USERNAME&#34;,
+  ONEAPP_K8S_HASH = &#34;$ONEAPP_K8S_HASH&#34;,
+  ONEAPP_K8S_NODENAME = &#34;$ONEAPP_K8S_NODENAME&#34;,
+  ONEAPP_K8S_PODS_NETWORK = &#34;$ONEAPP_K8S_PODS_NETWORK&#34;,
+  ONEAPP_K8S_PORT = &#34;$ONEAPP_K8S_PORT&#34;,
+  ONEAPP_K8S_TOKEN = &#34;$ONEAPP_K8S_TOKEN&#34;,
+  REPORT_READY = &#34;$ONEGATE_ENABLE&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34;,
+  TOKEN = &#34;$ONEGATE_ENABLE&#34; ]
+CPU = &#34;2&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INPUTS_ORDER = &#34;ONEGATE_ENABLE,ONEAPP_K8S_ADDRESS,ONEAPP_K8S_TOKEN,ONEAPP_K8S_HASH,ONEAPP_K8S_NODENAME,ONEAPP_K8S_PORT,ONEAPP_K8S_PODS_NETWORK,ONEAPP_K8S_ADMIN_USERNAME&#34;
+MEMORY = &#34;3096&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+USER_INPUTS = [
+  ONEAPP_K8S_ADDRESS = &#34;O|text|K8s master node address/network (CIDR subnet)&#34;,
+  ONEAPP_K8S_ADMIN_USERNAME = &#34;O|text|UI dashboard admin account (default admin-user)&#34;,
+  ONEAPP_K8S_HASH = &#34;O|text|K8s hash (to join node into the cluster)&#34;,
+  ONEAPP_K8S_NODENAME = &#34;O|text|K8s master node name&#34;,
+  ONEAPP_K8S_PODS_NETWORK = &#34;O|text|K8s pods network in CIDR (default 10.244.0.0/16)&#34;,
+  ONEAPP_K8S_PORT = &#34;O|text|K8s API port (default 6443)&#34;,
+  ONEAPP_K8S_TOKEN = &#34;O|password|K8s token (to join node into the cluster)&#34;,
+  ONEGATE_ENABLE = &#34;M|boolean|Enable OneGate reporting? (req. for multi-node)| |NO&#34; ]
+VCPU = &#34;2&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>3a298f6ca44c60c29c3eecc25a809c7b (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>1.15.6-5.10.0-1.20191122.qcow2</td></tr>
+                            <tr><td>Size:</td><td>4096 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859862</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="kubernetes.png"/>
+                                </div>
+                                <div class="og-title" >Service Kubernetes - KVM</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/ubuntu1604-5.10.0-1.20191115.qcow2" data-largesrc="ubuntu.png" data-title="Ubuntu 16.04" data-description="
+                            <p>This image has the OpenNebula contextualization package preinstalled.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/ubuntu.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>9d5745b04124083008245cf5b1251174 (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191115</td></tr>
+                            <tr><td>Size:</td><td>2252 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859862</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="ubuntu.png"/>
+                                </div>
+                                <div class="og-title" >Ubuntu 16.04</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/centos8-5.10.0-1.20200116.qcow2" data-largesrc="centos-5.5.png" data-title="CentOS 8" data-description="
+                            <p>A CentOS 8 image ready for your OpenNebula deployment.
+This image is based off a CentOS 8 cloud image with the OpenNebula contextualization package.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/centos.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;768&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>fbeccedfe02caf5574c5f43fe4b04602 (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-1.20200116</td></tr>
+                            <tr><td>Size:</td><td>4096 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1579279265</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="centos-5.5.png"/>
+                                </div>
+                                <div class="og-title" >CentOS 8</div>
+                            </div>
+						</a>
+					</li>
+					
+          <li>
+            <a  href="https://s3-eu-west-1.amazonaws.com/opennebula-marketplace/alpine38-5.10.0-1.20191115.qcow2" data-largesrc="alpine.png" data-title="Alpine Linux 3.8" data-description="
+                            <p>Alpine Linux 3.8 image ready for your OpenNebula deployment.
+This image is based of the Alpine Linux 3.8 cloud image with the OpenNebula contextualization package.
+There is no password for the root account. To access the Virtual Machine, add an SSH public key to your user or the template and ssh to the root account.
+Note: Remember to update the template in order to add a network after importing it.
+</p>
+                            <h4>image template:</h4> <pre><code>DEV_PREFIX = &#34;vd&#34;
+DRIVER = &#34;qcow2&#34;
+TYPE = &#34;OS&#34;
+</code></pre>
+                            <h4>vm template:</h4><pre><code>CONTEXT = [
+  NETWORK = &#34;YES&#34;,
+  SSH_PUBLIC_KEY = &#34;$USER[SSH_PUBLIC_KEY]&#34; ]
+CPU = &#34;1&#34;
+GRAPHICS = [
+  LISTEN = &#34;0.0.0.0&#34;,
+  TYPE = &#34;vnc&#34; ]
+INFO = &#34;Please do not use this VM Template for vCenter VMs. Refer to the documentation https://bit.ly/37NcJ0Y&#34;
+LOGO = &#34;images/logos/linux.png&#34;
+LXD_SECURITY_PRIVILEGED = &#34;true&#34;
+MEMORY = &#34;128&#34;
+OS = [
+  ARCH = &#34;x86_64&#34; ]
+SCHED_REQUIREMENTS = &#34;HYPERVISOR!=\&#34;vcenter\&#34;&#34;
+</code></pre>
+                            <p><table>
+                            <tr><td>Publisher:</td><td>OpenNebula Systems</td></tr>
+                            <tr><td>Checksum:</td><td>f2179b91f6a33393b8f79b5af00b09b9 (md5)</td></tr>
+                            <tr><td>Format:</td><td>qcow2</td></tr>
+                            <tr><td>Version:</td><td>5.10.0-2.20191115</td></tr>
+                            <tr><td>Size:</td><td>256 MB</td></tr>
+                            <tr><td>Regtime:</td><td>1574859288</td></tr>
+                            </table></p>
+                            " data-buttontext="">
+                            <div class="og-tile">
+                                <div class="og-thumb">
+                                    <img src="alpine.png"/>
+                                </div>
+                                <div class="og-title" >Alpine Linux 3.8</div>
                             </div>
 						</a>
 					</li>
