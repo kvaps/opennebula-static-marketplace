@@ -99,7 +99,7 @@ MARKET_MAD = "static"
 ENDPOINT = "https://github.com/kvaps/opennebula-static-marketplace/raw/master/exampleSite/public/metadata/index.html"
 EOT
 
-onedatastore create market.conf
+onedatastore create appmarket.conf
 ```
 
 ## Usage 
